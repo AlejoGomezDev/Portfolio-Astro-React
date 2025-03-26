@@ -1,0 +1,6 @@
+---
+const {imageUrl,title, url} = Astro.props;
+---
+<a href={url} target="_blank" class="w-9 border-1 rounded-full hover:scale-115  transition-transform duration-300 ease-out">
+    <img src={imageUrl} alt={title} class="w-full h-full invert-80 ">
+</a>

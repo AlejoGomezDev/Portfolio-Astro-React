@@ -1,0 +1,38 @@
+---
+import SocialLink from "../atoms/SocialLink.astro";
+import ButtonCV from "../atoms/ButtonCV.astro";
+
+const links = [
+  {
+    url: "https://www.linkedin.com/in/alejoGomez04/",
+    title: "LinkedIn",
+    imageUrl: "src/assets/logos/personal/linkedInCircle.png",
+  },
+  {
+    url: "https://github.com/AlejoGomezDev",
+    title: "GitHub",
+    imageUrl: "src/assets/logos/personal/github.png",
+  },
+];
+
+const cv = {
+  url: "https://docs.google.com/document/d/1LhV-8XImLrJmY3zIBHWOTDwyx2Km6vq_vQwDacVZEV4/edit?usp=sharing",
+  text: "Ver mi CV",
+};
+---
+
+<div class="grid grid-cols-3 gap-3 items-center w-full">
+    {
+      links.map((link, index) => {
+        const { url, title, imageUrl } = link;
+        return (
+            <div class="col-span-1 flex justify-center">
+                <SocialLink key={index} url={url} title={title} imageUrl={imageUrl} />
+            </div>
+        );
+      })
+    }
+    <div class="col-span-1 flex justify-center">
+      <ButtonCV url={cv.url} text={cv.text} />
+    </div>
+  </div>

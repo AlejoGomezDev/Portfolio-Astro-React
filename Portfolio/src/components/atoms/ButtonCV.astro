@@ -1,0 +1,11 @@
+---
+// ButtonCV.astro
+const {text, url} = Astro.props;
+---
+<a 
+  href={url} 
+  target="_blank" 
+  class="border-2 border-gray-300 bg-transparent rounded-full w-1/2 flex items-center justify-center p-1 hover:scale-110 transition-transform duration-500 ease-out font-medium"
+>
+  {text}
+</a>
