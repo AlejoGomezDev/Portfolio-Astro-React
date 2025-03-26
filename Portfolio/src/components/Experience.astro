@@ -1,15 +1,27 @@
 ---
-    import ExperiencieProyect from "./Molecules/Experiencie-proyect.astro"
-    import { getCollection } from "astro:content";
+import ExperiencieProyect from "./Molecules/Experiencie-proyect.astro";
+import { getCollection } from "astro:content";
 
-    const experiences = await getCollection('experiences')
+const experiences = await getCollection("experiences");
 
-    {console.log("GOLAA")}  
+const experiencesWithContent = await Promise.all(
+  experiences.map(async (experience) => {
+    const { data, render } = experience;
+    const { Content } = await render();
+
+    return {
+      ...data,
+      Content,
+    };
+  })
+);
 ---
 
 <div class="w-2/3 m-auto">
   <h1 class="text-5xl">Experiencia Laboral</h1>
   <br><br>
 
- 
+  {experiencesWithContent.map((experience) => (
+    <ExperiencieProyect {...experience} />
+  ))}
 </div>
