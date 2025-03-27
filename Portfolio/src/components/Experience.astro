@@ -1,5 +1,5 @@
 ---
-import ExperiencieProyect from "./Molecules/Experiencie-proyect.astro";
+import ExperiencieProject from "./Molecules/Experiencie-project.astro";
 import { getCollection } from "astro:content";
 
 const experiences = await getCollection("experiences");
@@ -18,10 +18,9 @@ const experiencesWithContent = await Promise.all(
 ---
 
 <div class="w-2/3 m-auto">
-  <h1 class="text-5xl">Experiencia Laboral</h1>
-  <br><br>
+  <h1 class="text-5xl pb-15">Experiencia Laboral</h1>
 
   {experiencesWithContent.map((experience) => (
-    <ExperiencieProyect {...experience} />
+    <ExperiencieProject {...experience} />
   ))}
 </div>

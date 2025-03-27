@@ -1,0 +1,33 @@
+---
+const { url, imageUrl, alt, title, techs, Content } = Astro.props;
+
+interface Tech {
+  alt: string;
+  iconUrl: string;
+}
+---
+
+<aside id = "project" class="mb-20 p-6 grid grid-cols-2 grid-rows-[4fr_1fr] bg-white/1 backdrop-blur-3xl">
+
+  <a href={url} target="_blank" class="w-2/3 row-span-2 self-center">
+    <div>
+      <img src={imageUrl} alt={alt} class="rounded" />
+    </div>
+  </a>
+
+  <div class="mx-auto px-5 ">
+    <h3 class="text-3xl font-semibold mb-4">{title}</h3>
+    <Content/>
+  </div>
+
+  <div class="col-start-2 mt-6 flex justify-around h-auto">
+    {
+      techs.map((tech: Tech) => {
+        const { alt, iconUrl } = tech;
+
+        return <img src={iconUrl} alt={alt} class="w-8 h-8" />;
+      })
+    }
+  </div>
+
+</aside>
