@@ -12,9 +12,6 @@
         - name: ".NET"
           alt: ".NET"
           iconUrl: "/src/assets/logos/skills/net.png"
-        - name: "ASP.NET"
-          alt: "ASP.NET"
-          iconUrl: "/src/assets/logos/skills/asp.png"
 ---
 ## Sistema de Gestión para Clínica
 

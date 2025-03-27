@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content"
-import  Project  from '../components/Molecules/Project.astro'
+import { Project } from '../components/Molecules/Project.tsx'
 
 const projects = await getCollection('projectss')
 
@@ -17,12 +17,11 @@ projects.map(async (project) => {
 );
 
 ---
-<div class="w-2/3 m-auto">
+<div class="w-2/3 m-auto text-center">
     <h1 class="text-5xl pb-15">Proyectos</h1>
-  
-    {projectsWithContent.map((project) => (
-        
-       <Project {...project}/>
-          
-    ))}
-</div>
+    <div id="project-container">
+      {projectsWithContent.map((project) => (
+        <Project client:load {...project} />
+      ))}
+    </div>
+  </div>

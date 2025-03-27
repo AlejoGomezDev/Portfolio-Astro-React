@@ -1,14 +1,14 @@
 ---
     title: "Portfolio Web"
     description: "Mi portfolio web"
-    imageUrl: "src/assets/projects-images/PortfolioWeb 2.png"
+    imageUrl: "src/assets/projects-images/PortfolioWeb2.png"
     techs:
-        - name: "React"
-          alt: "React"
+        - alt: "React"
           iconUrl: "/src/assets/logos/skills/react.png"
-        - name: "Astro"
-          alt: "Astro"
+        - alt: "Astro"
           iconUrl: "/src/assets/logos/skills/astro.png"
+        - alt: "Tailwind CSS"
+          iconUrl: "/src/assets/logos/skills/tailwind.png"
 
 ---
 Mi portfolio web actual es una demostración del avance tecnológico que alcancé en el ultimo tiempo.

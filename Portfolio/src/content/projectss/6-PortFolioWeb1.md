@@ -1,17 +1,14 @@
 ---
     title: "Portfolio Web (antiguo)"
     description: "Mi (antiguo) portfolio web"
-    imageUrl: "src/assets/projects-images/PortfolioWeb  1.png"
+    imageUrl: "src/assets/projects-images/PortfolioWeb 1.png"
     techs:
-        - name: "JavaScript"
-          alt: "JavaScript"
+        - alt: "JavaScript"
           iconUrl: "/src/assets/logos/skills/js.png"
-        - name: "HTML5"
-          alt: "HTML5"
-          iconUrl: "/src/assets/logos/skills/html.png"
-        - name: "CSS3"
-          alt: "CSS3"
-          iconUrl: "/src/assets/logos/skills/css.png" 
+        - alt: "HTML5"
+          iconUrl: "/src/assets/logos/skills/html5.png"
+        - alt: "CSS3"
+          iconUrl: "/src/assets/logos/skills/css3.png" 
 ---
 
 Esta aplicación web fue desarrollada inicialmente para mostrar mi perfil profesional.

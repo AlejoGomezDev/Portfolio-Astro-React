@@ -3,17 +3,13 @@
     description: "Sitio web de hamburguesería"
     imageUrl: "src/assets/projects-images/burguerCode 1.png"
     techs:
-        - name: "JavaScript"
-          alt: "JavaScript"
+        - alt: "JavaScript"
           iconUrl: "/src/assets/logos/skills/js.png"
-        - name: "HTML5"
-          alt: "HTML5"
-          iconUrl: "/src/assets/logos/skills/html.png"
-        - name: "CSS3"
-          alt: "CSS3"
-          iconUrl: "/src/assets/logos/skills/css.png"
-        - name: "BootStrap"
-          alt: "BootStrap"
+        - alt: "HTML5"
+          iconUrl: "/src/assets/logos/skills/html5.png"
+        - alt: "CSS3"
+          iconUrl: "/src/assets/logos/skills/css3.png"
+        - alt: "BootStrap"
           iconUrl: "/src/assets/logos/skills/bootstrap.png"
         
 ---

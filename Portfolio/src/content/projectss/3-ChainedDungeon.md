@@ -3,11 +3,9 @@
     description: "Juego de mazmorras"
     imageUrl: "src/assets/projects-images/TheCD.png"
     techs:
-        - name: "C++"
-          alt: "C++"
+        - alt: "C++"
           iconUrl: "/src/assets/logos/skills/c++.png"
-        - name: "SFML"
-          alt: "SFML"
+        - alt: "SFML"
           iconUrl: "/src/assets/logos/skills/sfml.png"
 ---
 

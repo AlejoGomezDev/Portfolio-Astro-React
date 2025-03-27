@@ -3,18 +3,14 @@
     description: "Biblioteca de Peliculas Reactiva"
     imageUrl: "src/assets/projects-images/Reactive Search 2.png"
     techs:
-        - name: "React"
-          alt: "React"
+        - alt: "React"
           iconUrl: "/src/assets/logos/skills/react.png"
-        - name: "JavaScript"
-          alt: "JavaScript"
+        - alt: "JavaScript"
           iconUrl: "/src/assets/logos/skills/js.png"
-        - name: "CSS3"
-          alt: "CSS3"
-          iconUrl: "/src/assets/logos/skills/css.png"
-        - name: "HTML5"
-          alt: "HTML5"
-          iconUrl: "/src/assets/logos/skills/html.png"
+        - alt: "CSS3"
+          iconUrl: "/src/assets/logos/skills/css3.png"
+        - alt: "HTML5"
+          iconUrl: "/src/assets/logos/skills/html5.png"
         
 ---
 

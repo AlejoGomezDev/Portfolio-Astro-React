@@ -23,7 +23,6 @@ const projectss = defineCollection({
         imageUrl: z.string(),
         techs:z.array(
             z.object({
-                name:z.string(),
                 alt:z.string(),
                 iconUrl:z.string(),
             })

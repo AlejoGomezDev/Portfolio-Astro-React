@@ -7,7 +7,7 @@ interface Tech {
 }
 ---
 
-<aside id = "project" class="mb-20 p-6 grid grid-cols-2 grid-rows-[4fr_1fr] bg-white/1 backdrop-blur-3xl">
+<aside id = "individual-experience" class="mb-20 p-6 grid grid-cols-2 grid-rows-[4fr_1fr] bg-white/1 backdrop-blur-3xl">
 
   <a href={url} target="_blank" class="w-2/3 row-span-2 self-center">
     <div>
@@ -25,7 +25,7 @@ interface Tech {
       techs.map((tech: Tech) => {
         const { alt, iconUrl } = tech;
 
-        return <img src={iconUrl} alt={alt} class="w-8 h-8" />;
+        return <img src={iconUrl} alt={alt} class="h-8 w-auto" />;
       })
     }
   </div>

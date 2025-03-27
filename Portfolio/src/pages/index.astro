@@ -14,13 +14,15 @@ import Projects from '../components/Projects.astro';
 		<section id="home" class="mb-32">
 			<Home />
 		</section>
-		<section id="experience" class="h-auto text-white text-center w-full m-auto pt-15" >
-			<Experience/>
-			<br><br><br><br>
-		</section>
-		<section id="projects" class="text-white">
-			<Projects />
-		</section>
+		<div id="experience-projects">
+			<section id="experience" class="h-auto text-white text-center w-full m-auto pt-15" >
+				<Experience/>
+				<br><br><br><br>
+			</section>
+			<section id="projects" class="text-white pt-15">
+				<Projects />
+			</section>
+		</div>
 	</main>
 </Layout>
 
