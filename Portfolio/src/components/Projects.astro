@@ -1,0 +1,24 @@
+---
+  import projectsJson from '../content/json/Projects.json'
+  import { Project } from './Molecules/Project'
+
+  const projects = projectsJson.Projects
+  const hasProjects = projects ?.length>0
+
+---
+    <div class="w-2/3 m-auto text-center">
+        <h1 class="text-5xl pb-15">Proyectos</h1>
+        <div id="project-container">
+            {
+              hasProjects && (
+                projects.map((project)=>{
+                  return(
+                    <Project client:load project = {project}/>
+                  )
+                })
+              )
+            }
+        </div>
+      </div>
+
+

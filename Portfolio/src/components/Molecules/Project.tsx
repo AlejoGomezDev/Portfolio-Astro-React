@@ -1,27 +1,23 @@
-import type { AstroComponentFactory } from "astro/runtime/server/index.js";
-import React from "react";
 import { useState } from "react";
-
-interface ProjectProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  techs: Tech[];
-  Content: AstroComponentFactory;
-}
 
 interface Tech {
   alt: string;
   iconUrl: string;
 }
 
-export function Project({
-  title,
-  description,
-  imageUrl,
-  techs,
-  Content,
-}: ProjectProps) {
+interface ProjectProps {
+  project: {
+    title: string;
+    description: string;
+    imageUrl: string;
+    techs: Tech[];
+    content: string;
+  };
+}
+
+export function Project({project}:ProjectProps) {
+
+  const {title,description,imageUrl,techs,content} = project
   const [expand, setExpand] = useState(false);
 
   const handleClick = () =>{
@@ -43,18 +39,18 @@ export function Project({
     project text-center p-5"
     onClick={handleClick}
     >
-      {!expand ? (
+      {!expand ? 
+      (
         <div
           className="
         flex
         flex-col gap-5"
-        
         >
           <h1 className="text-2xl">{title}</h1>
 
           <img src={imageUrl} alt={title} className="w-100 h-50" />
 
-          <div className="flex w-1/1 justify-around">
+          <div className="flex w-full justify-around">
             {techs.map((tech, index) => {
               const { alt, iconUrl } = tech;
               return (
@@ -68,10 +64,13 @@ export function Project({
             })}
           </div>
         </div>
-      ) : (
-        <div>
-          <h1>{title}</h1>
-
+      ) 
+      : 
+      (
+        <div className="col-span-2">
+          <h1 className="text-2xl">{title}</h1>
+          <h2 className="text-xl"> {description}</h2>
+            <div dangerouslySetInnerHTML={{ __html: content }} />
         </div>
       )}
     </div>
