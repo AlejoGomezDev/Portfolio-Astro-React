@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import Home from '../components/Home.astro';
 import Experience from '../components/Experience.astro'
 import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
 ---
 
 <Layout>
@@ -11,18 +12,25 @@ import Projects from '../components/Projects.astro';
 		<NavBar />
 	</header>
 	<main class="pt-16">
+
 		<section id="home" class="mb-32">
 			<Home />
 		</section>
+
 		<div id="experience-projects">
-			<section id="experience" class="h-auto text-white text-center w-full m-auto pt-15" >
-				<Experience/>
-				<br><br><br><br>
+
+			<section id="experience" class="h-auto text-white text-center w-full pt-32" >
+				<Experience/> <!-- El componente tiene mb-32 -->
 			</section>
-			<section id="projects" class="text-white pt-15">
+			<section id="projects" class="text-white pt-32 pb-32">
 				<Projects />
 			</section>
+			
 		</div>
+
+		<section id="skills" class="text-white pt-32 text-center">
+			<Skills/>
+		</section>
 	</main>
 </Layout>
 

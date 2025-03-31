@@ -15,17 +15,15 @@ interface ProjectProps {
   };
 }
 
-export function Project({project}:ProjectProps) {
-
-  const {title,description,imageUrl,techs,content} = project
+export function Project({ project }: ProjectProps) {
+  const { title, description, imageUrl, techs, content } = project;
   const [expand, setExpand] = useState(false);
 
-  const handleClick = () =>{
-    setExpand(!expand)
-  }
+  const handleClick = () => {
+    setExpand(!expand);
+  };
 
   return (
-
     <div
       id="individual-project"
       className="
@@ -36,15 +34,17 @@ export function Project({project}:ProjectProps) {
     transition-all
     duration-300
     ease-in-out
-    project text-center p-5"
-    onClick={handleClick}
+    project text-center p-5
+    h-min"
+      onClick={handleClick}
     >
-      {!expand ? 
-      (
+      {!expand ? (
         <div
           className="
         flex
-        flex-col gap-5"
+        flex-col 
+        gap-5
+        "
         >
           <h1 className="text-2xl">{title}</h1>
 
@@ -64,13 +64,18 @@ export function Project({project}:ProjectProps) {
             })}
           </div>
         </div>
-      ) 
-      : 
-      (
+      ) : (
         <div className="col-span-2">
           <h1 className="text-2xl">{title}</h1>
           <h2 className="text-xl"> {description}</h2>
-            <div dangerouslySetInnerHTML={{ __html: content }} />
+          <div
+            className="[&_p]:my-4
+      [&_ul]:list-disc [&_ul]:pl-6
+      [&_li]:my-2
+      [&_strong]:font-bold
+      text-left"
+            dangerouslySetInnerHTML={{ __html: content }}
+          />
         </div>
       )}
     </div>

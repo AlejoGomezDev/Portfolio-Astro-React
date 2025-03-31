@@ -18,7 +18,7 @@
             "iconUrl": "/src/assets/logos/skills/tailwind.png"
           }
         ],
-        "content": "<p>Mi portfolio web actual es una demostración del avance tecnológico que alcancé en el ultimo tiempo.\nApliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el rendimiento, escalabilidad y estructura del mismo.</p>\n<h3>Características:</h3>\n<ul>\n<li>Diseño <strong>responsive</strong>.</li>\n<li>Uso de <strong>React</strong> para la interactividad y el manejo de estados.</li>\n<li>Generación de contenido dinámico utilizando <strong>Astro</strong>.</li>\n</ul>"
+        "content": "<p>Mi portfolio web actual es una demostración del avance tecnológico que alcancé en el ultimo tiempo.\nApliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el rendimiento, escalabilidad y estructura del mismo.</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Diseño <strong>responsive</strong>.</li>\n<li>Uso de <strong>React</strong> para la interactividad y el manejo de estados.</li>\n<li>Generación de contenido dinámico utilizando <strong>Astro</strong>.</li>\n</ul>"
       },
       {
         "title": "Reactive Search",
@@ -81,7 +81,7 @@
             "iconUrl": "/src/assets/logos/skills/net.png"
           }
         ],
-        "content": "<h2>Sistema de Gestión para Clínica</h2>\n<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión integral</strong> diseñado para administrar una <strong>clínica médica</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Funcionalidades</strong>:\n<ul>\n<li>Sistema de <strong>login</strong>.</li>\n<li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de médicos, pacientes y turnos.</li>\n<li>Generación de <strong>informes</strong> basados en datos almacenados en la DB.</li>\n</ul>\n</li>\n</ul>"
+        "content": "<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión integral</strong> diseñado para administrar una <strong>clínica médica</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Sistema de <strong>login</strong>.</li>\n<li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de médicos, pacientes y turnos.</li>\n<li>Generación de <strong>informes</strong> basados en datos almacenados en la DB.</li>\n</ul>\n</li>\n</ul>"
       },
       {
         "title": "CodeFlix",
@@ -113,7 +113,7 @@
             "iconUrl": "/src/assets/logos/skills/express.png"
           }
         ],
-        "content": "<p>Proyecto final para la certificación de <strong>Web Developer</strong>, esta aplicación web permite gestionar una <strong>biblioteca de películas</strong> mediante el consumo de una <strong>API externa</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Funcionalidades</strong>:\n<ul>\n<li><strong>Inicio de sesión</strong>.</li>\n<li>Manejo de <strong>usuarios</strong> con ABML (alta, baja, modificación, listado).</li>\n<li>Sistema de <strong>comentarios</strong>.</li>\n<li>Integración con una base de datos <strong>MySQL</strong> para el almacenamiento de información.</li>\n</ul>\n</li>\n</ul>"
+        "content": "<p>Proyecto final para la certificación de <strong>Web Developer</strong>, esta aplicación web permite gestionar una <strong>biblioteca de películas</strong> mediante el consumo de una <strong>API externa</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<ul>\n<li><strong>Inicio de sesión</strong>.</li>\n<li>Manejo de <strong>usuarios</strong> con ABML (alta, baja, modificación, listado).</li>\n<li>Sistema de <strong>comentarios</strong>.</li>\n<li>Integración con una base de datos <strong>MySQL</strong> para el almacenamiento de información.</li>\n</ul>\n</li>\n</ul>"
       },
       {
         "title": "Portfolio Web (antiguo)",
