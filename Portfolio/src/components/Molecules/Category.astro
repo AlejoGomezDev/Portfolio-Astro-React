@@ -1,5 +1,5 @@
 ---
-import SkillCard from "../atoms/SkillCards.astro";
+import SkillCard from "../atoms/SkillCard.astro";
 const { category, items } = Astro.props;
 
 interface Skill {
@@ -34,10 +34,7 @@ type Item = SkillGroup | SingleSkill;
               <div class="flex flex-wrap gap-4">
                 {
                   item.skills.map((skill: Skill) => (
-                    <div class="flex flex-col p-2">
-                      <h5>{skill.name}</h5>
-                      <img src={skill.icon} alt={skill.alt} class="w-12 h-12 object-contain" />
-                    </div>
+                    <SkillCard skill={skill}/>
                   ))
                 }
               </div>
@@ -45,10 +42,7 @@ type Item = SkillGroup | SingleSkill;
           );
         } else {
           return (
-              <div class="flex flex-col border-1">
-                  <h4 class="pb-2">{item.name}</h4>
-                  <img src={item.icon} alt={item.alt} class="w-auto h-12 object-contain" />  
-              </div>
+            <SkillCard skill={item}/>
           );
         }
       })
