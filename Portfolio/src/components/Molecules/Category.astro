@@ -1,0 +1,57 @@
+---
+import SkillCard from "../atoms/SkillCards.astro";
+const { category, items } = Astro.props;
+
+interface Skill {
+  name: string;
+  icon: string;
+  alt: string;
+}
+
+interface SkillGroup {
+  type:string
+  skills: Skill[];
+}
+
+interface SingleSkill {
+  name: string;
+  icon: string;
+  alt: string;
+}
+
+type Item = SkillGroup | SingleSkill;
+---
+
+<div class="text-center text-white w-2/3 m-auto">
+  <h3 class="text-3xl text-left pt-10 pb-2">{category}</h3>
+  <div class="border-1 rounded-lg flex flex-wrap p-4">
+    {
+      items.map((item: Item) => {
+        if ("skills" in item) {
+          return (
+            <div class="w-full flex flex-col mb-4">
+              <h4 class="text-lg text-left">{item.type}</h4>
+              <div class="flex flex-wrap gap-4">
+                {
+                  item.skills.map((skill: Skill) => (
+                    <div class="flex flex-col p-2">
+                      <h5>{skill.name}</h5>
+                      <img src={skill.icon} alt={skill.alt} class="w-12 h-12 object-contain" />
+                    </div>
+                  ))
+                }
+              </div>
+            </div>
+          );
+        } else {
+          return (
+              <div class="flex flex-col border-1">
+                  <h4 class="pb-2">{item.name}</h4>
+                  <img src={item.icon} alt={item.alt} class="w-auto h-12 object-contain" />  
+              </div>
+          );
+        }
+      })
+    }
+  </div>
+</div>

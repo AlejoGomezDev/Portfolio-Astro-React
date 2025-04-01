@@ -1,7 +1,7 @@
 ---
 import SkillsJson from '../content/json/Skills.json'
 import Skill from '../components/Molecules/Skill.astro'
-
+import Category from './Molecules/Category.astro';
 const skills = SkillsJson.Skills;
 
 ---
@@ -12,7 +12,9 @@ const skills = SkillsJson.Skills;
 <div>
     {
        skills.map((category)=>{
-        return (<h1>{category.category}</h1>)
+        return (
+        <Category {...category}/>
+        )
        }) 
     }
 </div>
