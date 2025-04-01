@@ -1,0 +1,129 @@
+{
+    "Skills": [
+      {
+        "category": "software_develop",
+        "items": [
+          {
+            "name": "C++",
+            "icon": "src/assets/logos/skills/c++.png",
+            "alt": "C++"
+          },
+          {
+            "name": "C#",
+            "icon": "src/assets/logos/skills/cSharp.png",
+            "alt": "C#"
+          },
+          {
+            "name": "SQL",
+            "icon": "src/assets/logos/skills/sql.png",
+            "alt": "SQL"
+          },
+          {
+            "name": "Java",
+            "icon": "src/assets/logos/skills/java.png",
+            "alt": "Java"
+          }
+        ]
+      },
+      {
+        "category": "web_develop",
+        "items": [
+          {
+            "type": "core",
+            "skills": [
+              {
+                "name": "HTML5",
+                "icon": "src/assets/logos/skills/html5.png",
+                "alt": "HTML5"
+              },
+              {
+                "name": "CSS3",
+                "icon": "src/assets/logos/skills/css3.png",
+                "alt": "CSS3"
+              },
+              {
+                "name": "JavaScript",
+                "icon": "src/assets/logos/skills/js.png",
+                "alt": "JavaScript"
+              }
+            ]
+          },
+          {
+            "type": "frameworks",
+            "skills": [
+              {
+                "name": "React",
+                "icon": "src/assets/logos/skills/react.png",
+                "alt": "React"
+              },
+              {
+                "name": "Astro",
+                "icon": "src/assets/logos/skills/astro.png",
+                "alt": "Astro"
+              },
+              {
+                "name": "Bootstrap",
+                "icon": "src/assets/logos/skills/bootstrap.png",
+                "alt": "Bootstrap"
+              },
+              {
+                "name": "Tailwind",
+                "icon": "src/assets/logos/skills/tailwind.png",
+                "alt": "Tailwind"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category": "backend",
+        "items": [
+          {
+            "name": "Node.js",
+            "icon": "src/assets/logos/skills/node.png",
+            "alt": "Node.js"
+          },
+          {
+            "name": "Express",
+            "icon": "src/assets/logos/skills/express.png",
+            "alt": "Express"
+          },
+          {
+            "name": ".NET",
+            "icon": "src/assets/logos/skills/net.png",
+            "alt": ".NET"
+          }
+        ]
+      },
+      {
+        "category": "dataBase",
+        "items": [
+          {
+            "name": "SQL Server",
+            "icon": "src/assets/logos/skills/sqlServer.png",
+            "alt": "SQL Server"
+          },
+          {
+            "name": "MySQL",
+            "icon": "src/assets/logos/skills/mysql.png",
+            "alt": "MySQL"
+          }
+        ]
+      },
+      {
+        "category": "others",
+        "items": [
+          {
+            "name": "SFML",
+            "icon": "src/assets/logos/skills/sfml.png",
+            "alt": "SFML"
+          },
+          {
+            "name": "Azure",
+            "icon": "src/assets/logos/skills/azure.png",
+            "alt": "Azure"
+          }
+        ]
+      }
+    ]
+  }
