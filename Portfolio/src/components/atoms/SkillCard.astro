@@ -12,7 +12,7 @@ export interface Props {
 const { skill } = Astro.props;
 ---
 
-<div class="flex flex-col p-2">
+<div class="flex flex-col p-4 hover:scale-115 transition-all duration-200 ease-in-out">
   <h5 class="pb-1">{skill.name}</h5>
   <img 
     src={skill.icon} 

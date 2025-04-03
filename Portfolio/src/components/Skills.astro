@@ -1,19 +1,18 @@
 ---
 import SkillsJson from '../content/json/Skills.json'
-import Skill from '../components/Molecules/Skill.astro'
 import Category from './Molecules/Category.astro';
 const skills = SkillsJson.Skills;
 
 ---
 
-<h1 class="text-5xl">
+<h1 class="text-5xl pb-10">
     Habilidades
 </h1>
 <div>
     {
        skills.map((category)=>{
-        return (
-        <Category {...category}/>
+        return(
+            <Category {...category}/>
         )
        }) 
     }
