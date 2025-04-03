@@ -14,14 +14,14 @@
             "alt": "C#"
           },
           {
-            "name": "SQL",
-            "icon": "src/assets/logos/skills/sql.png",
-            "alt": "SQL"
-          },
-          {
             "name": "Java",
             "icon": "src/assets/logos/skills/java.png",
             "alt": "Java"
+          },
+          {
+            "name": "SQL",
+            "icon": "src/assets/logos/skills/sql.png",
+            "alt": "SQL"
           }
         ]
       },

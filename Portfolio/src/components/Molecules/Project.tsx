@@ -35,7 +35,11 @@ export function Project({ project }: ProjectProps) {
     duration-300
     ease-in-out
     project text-center p-5
-    h-min"
+    h-min
+    border-1
+    border-violet-border
+   
+    "
       onClick={handleClick}
     >
       {!expand ? (

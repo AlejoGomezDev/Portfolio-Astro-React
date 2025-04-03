@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @theme {
   --color-violet-bg: rgb(18,8,27); 
+  --color-enfasis: rgb(18,8,27); 
+  --color-violet-border: rgb(43, 2, 37) ;
 }
 
 #experience-projects {
@@ -29,4 +31,13 @@
 }
 #category-container fieldset:last-child{
   margin-bottom: 1rem;
+}
+#individual-category{
+  box-shadow: 0px 0px 30px 2px rgb(43, 2, 37);
+}
+#extra-skill-container{
+  box-shadow: 0px 0px 30px 2px rgb(43, 2, 37);
+}
+#about{
+  box-shadow: 0px 0px 30px 2px rgb(43, 2, 37);
 }
