@@ -1,43 +1,49 @@
 ---
-
+import ButtonCV from "./atoms/ButtonCV.astro"
+const cv = {
+  url: "https://docs.google.com/document/d/1LhV-8XImLrJmY3zIBHWOTDwyx2Km6vq_vQwDacVZEV4/edit?usp=sharing",
+  text: "Ver mi CV",
+};
 ---
 <div class="w-2/3 m-auto ">
     <h1 class="text-5xl pb-15">Sobre Mí</h1>
     <div id="about" class="w-full p-6 flex flex-row border-1 border-violet-border">
-      <div class="p-6 ">
-          <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg max-w-xs"> <!-- Añadido redondeo y tamaño máximo -->
-      </div>
+      <div class="p-6">
+            <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg max-w-xs"> <!-- Añadido redondeo y tamaño máximo -->
+
+            <ButtonCV text={cv.text} url={cv.url}>
+     </div>
       
       <div class="p-6 text-left space-y-4"> 
-          <h4 class="text-2xl">¡Hola! Soy <span class="text-violet-600 text-4xl font-semibold">Alejo Gomez</span></h4>
+          <h4 class="text-2xl text-gray-300">¡Hola! Soy <span class="text-4xl text-white font-semibold">Alejo Gomez</span></h4>
           
           <p class="text-lg text-gray-200 leading-relaxed">
             Programador Junior y Estudiante universitario de Programación y Sistemas Informáticos.
           </p>
           
-          <div class="p-4 border-1 shadow-2xs border-violet-border rounded-lg">
+          <div id="experience-p" class="p-4  border-violet-border">
               <p>
-                  Con más de <span class="text-lg text-violet-600">2 años de experiencia</span> en:
+                  Con más de <span class="text-lg text-enfasis-text">2 años de experiencia</span> en:
               </p>
               <ul class="list-disc list-inside mt-2">
                   <li>Desarrollo de Software</li>
                   <li>Desarrollo Web</li>
               </ul>
-          </div>
+              <br>
+              <div>
+                  <p>Tecnologías principales:</p>
+                  <ul class="mt-2">
+                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> C++</li>
+                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> C#</li>
+                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> SQL</li>
+                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> JavaScript</li>
+                      <br>
+                      <li class="col-span-2 text-gray-300">Entre otras ...</li>
+                    </ul>
+                </div>
+            </div>
           
-          <div>
-              <p>Tecnologías principales:</p>
-              <ul class="grid grid-cols-2 gap-x-4 mt-2">
-                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> C++</li>
-                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> C#</li>
-                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> SQL</li>
-                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> JavaScript</li>
-                  <br>
-                  <li class="col-span-2 text-gray-300">Entre otras tecnologías...</li>
-              </ul>
-          </div>
-          
-          <p class="leading-relaxed border-t pt-4 border-indigo-100">
+          <p class="leading-relaxed pt-2 border-indigo-100">
             Busco unirme a un equipo dinámico donde pueda contribuir con mis habilidades y aprender de profesionales experimentados. 
             <span class="block mt-2">Me entusiasman los proyectos desafiantes que permiten crecimiento profesional.</span>
           </p>
