@@ -3,33 +3,45 @@
 ---
 <div class="w-2/3 m-auto ">
     <h1 class="text-5xl pb-15">Sobre Mí</h1>
-    <div id="about" class="w-full p-6 flex flex-row border-1 border-violet-border " >
-        <div class="p-6">
-            <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal">
-        </div>
-        <div class="p-6 border-1 text-left ">
-            <h4 class="text-2xl pb-4">¡Hola! soy <span class="font-semibold text-3xl">Alejo Gomez</span></h4>
-            <p>
-              Programador Junior y Estudiante universitario de Programación y Sistemas Informáticos.
-            </p>
+    <div id="about" class="w-full p-6 flex flex-row border-1 border-violet-border">
+      <div class="p-6 ">
+          <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg max-w-xs"> <!-- Añadido redondeo y tamaño máximo -->
+      </div>
+      
+      <div class="p-6 text-left space-y-4"> 
+          <h4 class="text-2xl">¡Hola! Soy <span class="text-violet-600 text-4xl font-semibold">Alejo Gomez</span></h4>
           
-            <p class="mt-4">
-              Cuento con más de <span class="font-semibold">2 años de experiencia</span> en Desarrollo de Software y Desarrollo Web,
-              utilizando tecnologías como:
-            </p>
-            <ul class="text-left">
-                <li>- C++</li>
-                <li>- C#</li>
-                <li>- SQL</li>
-                <li>- JavaScript</li>
-                <li>- Entre otras ...</li>
-            </ul>
+          <p class="text-lg text-gray-200 leading-relaxed">
+            Programador Junior y Estudiante universitario de Programación y Sistemas Informáticos.
+          </p>
           
-            <p class="mt-4">
-              Mi objetivo es unirme a un equipo dinámico donde pueda contribuir y aprender de profesionales experimentados.
-              Me entusiasma trabajar en proyectos que me permitan aplicar y expandir mis habilidades.
-            </p>
-        </div>
-    </div>
+          <div class="p-4 border-1 shadow-2xs border-violet-border rounded-lg">
+              <p>
+                  Con más de <span class="text-lg text-violet-600">2 años de experiencia</span> en:
+              </p>
+              <ul class="list-disc list-inside mt-2">
+                  <li>Desarrollo de Software</li>
+                  <li>Desarrollo Web</li>
+              </ul>
+          </div>
+          
+          <div>
+              <p>Tecnologías principales:</p>
+              <ul class="grid grid-cols-2 gap-x-4 mt-2">
+                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> C++</li>
+                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> C#</li>
+                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> SQL</li>
+                  <li class="flex items-center"><span class="text-violet-500 mr-2">▹</span> JavaScript</li>
+                  <br>
+                  <li class="col-span-2 text-gray-300">Entre otras tecnologías...</li>
+              </ul>
+          </div>
+          
+          <p class="leading-relaxed border-t pt-4 border-indigo-100">
+            Busco unirme a un equipo dinámico donde pueda contribuir con mis habilidades y aprender de profesionales experimentados. 
+            <span class="block mt-2">Me entusiasman los proyectos desafiantes que permiten crecimiento profesional.</span>
+          </p>
+      </div>
+  </div>
       
 </div>
