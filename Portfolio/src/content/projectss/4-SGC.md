@@ -1,5 +1,6 @@
 ---
     title: "Sistema de Gestión para Clínica"
+    href: "https://drive.google.com/drive/folders/1cqnZapKfmqFRs4z3m3U-GHEs79RyamSz?usp=sharing"
     description: "Sistema de gestión"
     imageUrl: "src/assets/projects-images/Clinica 1.png"
     techs:
@@ -22,4 +23,5 @@ Este proyecto integrador universitario consiste en un **sistema de gestión inte
   - Sistema de **login**.
   - Manejo del **alta**, **baja**, **modificación** y **listado** (ABML) de médicos, pacientes y turnos.
   - Generación de **informes** basados en datos almacenados en la DB.
+
 

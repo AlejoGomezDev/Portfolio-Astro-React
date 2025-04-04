@@ -1,0 +1,41 @@
+{
+    "socialLinks": [
+      {
+        "url": "mailto:alejongomez@gmail.com",
+        "imgUrl": "src/assets/personal-images/email.png",
+        "alt": "Email",
+        "text": "alejongomez@gmail.com",
+        "isLink": true
+      },
+      {
+        "url": "https://www.linkedin.com/in/alejoGomez04/",
+        "imgUrl": "src/assets/personal-images/linkedIn.png",
+        "alt": "LinkedIn",
+        "text": "alejoGomez04",
+        "isLink": true,
+        "target": "_blank"
+      },
+      {
+        "url": "https://github.com/AlejoGomezDev",
+        "imgUrl": "src/assets/personal-images/githubB.png",
+        "alt": "GitHub",
+        "text": "AlejoGomezDev",
+        "isLink": true,
+        "target": "_blank"
+      },
+      {
+        "url": "https://wa.me/5491165874773",
+        "imgUrl": "src/assets/personal-images/wpp.png",
+        "alt": "WhatsApp",
+        "text": "Click para chatear",
+        "isLink": true,
+        "target": "_blank"
+      },
+      {
+        "imgUrl": "src/assets/personal-images/tel.png",
+        "alt": "Teléfono",
+        "text": "+54 9 11 6587-4773",
+        "isLink": false
+      }
+    ]
+  }

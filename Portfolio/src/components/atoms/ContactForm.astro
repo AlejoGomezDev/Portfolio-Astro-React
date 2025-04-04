@@ -1,0 +1,132 @@
+<div class="my-auto pt-1">
+    <h4 class="text-2xl">Envíame un <span class="font-bold">email</span></h4>
+    <form id="contactForm" class="flex flex-col w-full m-auto mt-4 box-border gap-3">
+      <input
+        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        type="text"
+        name="nombre"
+        id="nombre"
+        placeholder="Escribe tu Nombre (Letras y espacios blancos)"
+        title="Nombre solo acepta letras y espacios en blanco"
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        required
+      />
+      <input
+        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Escribe tu Email (ejemplo@TuEmail.com)"
+        title="Email invalido"
+        pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        required
+      />
+      <input
+        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        type="text"
+        name="asunto"
+        id="asunto"
+        placeholder="Escribe el Asunto"
+      />
+      <input
+        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        type="text"
+        name="mensaje"
+        id="mensaje"
+        placeholder="Escribe tu Mensaje (Máx. 255 Caracteres)"
+        pattern="^.{1,255}$"
+        required
+      />
+  
+      <div id="error" class="hidden text-red-600 font-semibold">
+        <p>Asegurate de introducir los datos de forma correcta</p>
+      </div>
+  
+      <input
+        class="w-fit border-1 border-violet-border text-white px-5 py-1 m-auto mt-7 rounded-lg cursor-pointer hover:scale-110 transition-all duration-150 ease-in"
+        type="submit"
+        name="submit"
+        id="submit"
+        value="Enviar"
+      />
+    </form>
+    <div id="response" class="hidden mt-3">
+      <p>¡El mensaje ha sido enviado!</p>
+    </div>
+    <br />
+    <script>
+      const contactForm = document.getElementById('contactForm') as HTMLFormElement;
+      const inputs = document.querySelectorAll<HTMLInputElement>('#contactForm [required]');
+      const formError = document.getElementById('error') as HTMLDivElement;
+      const formResponse = document.getElementById('response') as HTMLDivElement;
+      const submitBtn = document.getElementById('submit') as HTMLInputElement;
+  
+      document.addEventListener('keyup', (e) => {
+        const target = e.target as HTMLInputElement;
+        
+        if (target.matches('#contactForm [required]')) {
+          const { pattern, value } = target;
+          
+          if (pattern && value !== '') {
+            try {
+              const regex = new RegExp(pattern);
+              target.classList.toggle('invalid-input', !regex.test(value));
+            } catch (err) {
+              console.error('Error en expresión regular:', err);
+            }
+          }
+        }
+      });
+  
+
+      function validateForm(): boolean {
+        return Array.from(inputs).every((input) => {
+          const { pattern, value } = input;
+          
+          if (!pattern || value === '') return true;
+          
+          try {
+            const isValid = new RegExp(pattern).test(value);
+            input.classList.toggle('invalid-input', !isValid);
+            return isValid;
+          } catch (err) {
+            console.error('Error en validación:', err);
+            return false;
+          }
+        });
+      }
+  
+      // Manejo del envío
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+  
+        if (!validateForm()) {
+          formError.classList.remove('hidden');
+          formResponse.classList.add('hidden');
+          return;
+        }
+  
+        formError.classList.add('hidden');
+        submitBtn.value = 'Enviando...';
+        submitBtn.classList.add('disabled');
+  
+        try {
+          const response = await fetch('https://formsubmit.co/ajax/alejongomez@gmail.com', {
+            method: 'POST',
+            body: new FormData(contactForm),
+          });
+  
+          if (!response.ok) throw new Error('Error en la respuesta del servidor');
+  
+          formResponse.classList.remove('hidden');
+          contactForm.reset();
+          setTimeout(() => formResponse.classList.add('hidden'), 2000);
+        } catch (err) {
+          console.error('Error al enviar el formulario:', err);
+        } finally {
+          submitBtn.value = 'Enviar';
+          submitBtn.classList.remove('disabled');
+        }
+      });
+    </script>
+  </div>

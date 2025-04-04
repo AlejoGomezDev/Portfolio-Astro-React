@@ -6,18 +6,23 @@ const cv = {
 };
 ---
 <div class="w-2/3 m-auto ">
-    <h1 class="text-5xl pb-15">Sobre Mí</h1>
+    <h3 class="text-5xl pb-15">Sobre Mí</h3>
     <div id="about" class="w-full p-6 flex flex-row border-1 border-violet-border">
       <div class="p-6">
-            <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg max-w-xs"> <!-- Añadido redondeo y tamaño máximo -->
+        <div class="h-2/3">
+          <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg max-w-xs"> 
 
-            <ButtonCV text={cv.text} url={cv.url}>
+        </div>
+        <div class="h-1/3 flex justify-center items-center  ">
+          <ButtonCV text={cv.text} url={cv.url}>
+        </div>
+
      </div>
       
       <div class="p-6 text-left space-y-4"> 
           <h4 class="text-2xl text-gray-300">¡Hola! Soy <span class="text-4xl text-white font-semibold">Alejo Gomez</span></h4>
           
-          <p class="text-lg text-gray-200 leading-relaxed">
+          <p class="text-lg leading-relaxed">
             Programador Junior y Estudiante universitario de Programación y Sistemas Informáticos.
           </p>
           
@@ -33,19 +38,19 @@ const cv = {
               <div>
                   <p>Tecnologías principales:</p>
                   <ul class="mt-2">
+                    <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> JavaScript</li>
+                    <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> C#</li>
+                    <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> SQL</li>
                       <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> C++</li>
-                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> C#</li>
-                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> SQL</li>
-                      <li class="flex items-center"><span class="text-enfasis-text mr-2">▹</span> JavaScript</li>
                       <br>
                       <li class="col-span-2 text-gray-300">Entre otras ...</li>
                     </ul>
                 </div>
             </div>
           
-          <p class="leading-relaxed pt-2 border-indigo-100">
-            Busco unirme a un equipo dinámico donde pueda contribuir con mis habilidades y aprender de profesionales experimentados. 
-            <span class="block mt-2">Me entusiasman los proyectos desafiantes que permiten crecimiento profesional.</span>
+          <p class="leading-relaxed pt-2 text-lg">
+            Busco unirme a un equipo dinámico donde pueda contribuir con mis habilidades y formarme con profesionales experimentados. 
+            <span class="block mt-2">Me gustan los desafíos y aprender de ellos.</span>
           </p>
       </div>
   </div>

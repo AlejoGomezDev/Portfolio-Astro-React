@@ -1,0 +1,26 @@
+---
+import ContactForm from "./atoms/ContactForm.astro"
+import SocialAnchor from '../components/atoms/ContactAnchor.astro';
+import SocialLinks from '../content/json/SocialLinks.json';
+
+
+const SocialData = SocialLinks.socialLinks
+---
+<div class="w-2/3 m-auto mb-32">
+    <h3 class="text-5xl pb-15">Contacto</h3>
+    <div class="gap-6 grid grid-cols-[1fr_2fr]">
+        <div id="contact-div" class="border-violet-border p-5">
+            {
+                SocialData.map((link)=>{
+                    return(
+                        <SocialAnchor {...link}/>
+                    )
+                })
+            }
+        </div>
+        <div id="contact-div" class="border-violet-border flex flex-col"> 
+            <ContactForm class="flex-grow"/>  
+        </div>
+    </div>
+
+</div>

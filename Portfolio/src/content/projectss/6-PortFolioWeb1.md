@@ -1,5 +1,6 @@
 ---
     title: "Portfolio Web (antiguo)"
+    href: ""
     description: "Mi (antiguo) portfolio web"
     imageUrl: "src/assets/projects-images/PortfolioWeb 1.png"
     techs:

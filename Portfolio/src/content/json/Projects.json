@@ -4,6 +4,7 @@
         "title": "Portfolio Web",
         "description": "Mi portfolio web",
         "imageUrl": "src/assets/projects-images/PortfolioWeb2.png",
+        "href": "",
         "techs": [
           {
             "alt": "React",
@@ -24,6 +25,7 @@
         "title": "Reactive Search",
         "description": "Biblioteca de Peliculas Reactiva",
         "imageUrl": "src/assets/projects-images/Reactive Search 2.png",
+        "href": "https://drive.google.com/drive/folders/1rJDNOde9oeIJnAYOWgGE047xEivRVy7K?usp=sharing",
         "techs": [
           {
             "alt": "React",
@@ -48,6 +50,7 @@
         "title": "The Chained Dungeon",
         "description": "Juego de mazmorras",
         "imageUrl": "src/assets/projects-images/TheCD.png",
+        "href" : "https://drive.google.com/drive/folders/1TbB_2g_o13Wu9z8yuZpmMJQFqrDO1rDR?usp=sharing",
         "techs": [
           {
             "alt": "C++",
@@ -64,6 +67,7 @@
         "title": "Sistema de Gestión para Clínica",
         "description": "Sistema de gestión",
         "imageUrl": "src/assets/projects-images/Clinica 1.png",
+        "href" :"https://drive.google.com/drive/folders/1cqnZapKfmqFRs4z3m3U-GHEs79RyamSz?usp=sharing",
         "techs": [
           {
             "name": "C#",
@@ -87,6 +91,7 @@
         "title": "CodeFlix",
         "description": "Biblioteca de Peliculas",
         "imageUrl": "src/assets/projects-images/CodeFlix1.png",
+        "href":"https://drive.google.com/drive/folders/1VgIciZZLKRH8c-jHnSiDECDPHDSvqFil?usp=sharing",
         "techs": [
           {
             "alt": "JavaScript",
@@ -119,6 +124,7 @@
         "title": "Portfolio Web (antiguo)",
         "description": "Mi (antiguo) portfolio web",
         "imageUrl": "src/assets/projects-images/PortfolioWeb 1.png",
+        "href":"",
         "techs": [
           {
             "alt": "JavaScript",
@@ -139,6 +145,7 @@
         "title": "Burguer::Code",
         "description": "Sitio web de hamburguesería",
         "imageUrl": "src/assets/projects-images/burguerCode 1.png",
+        "href":"https://drive.google.com/drive/folders/1AhBDPoYYdZZByxVOd6jMHMNGDZENAHst?usp=sharing",
         "techs": [
           {
             "alt": "JavaScript",

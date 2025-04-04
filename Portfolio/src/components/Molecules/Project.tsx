@@ -11,12 +11,13 @@ interface ProjectProps {
     description: string;
     imageUrl: string;
     techs: Tech[];
+    href:string;
     content: string;
   };
 }
 
 export function Project({ project }: ProjectProps) {
-  const { title, description, imageUrl, techs, content } = project;
+  const { title, description, imageUrl, techs, content,href } = project;
   const [expand, setExpand] = useState(false);
 
   const handleClick = () => {
@@ -80,6 +81,7 @@ export function Project({ project }: ProjectProps) {
       text-left"
             dangerouslySetInnerHTML={{ __html: content }}
           />
+          <a href={href} target="_blank" onClick={(e) => e.stopPropagation()} className="text-blue-500 ">Ver más...</a>
         </div>
       )}
     </div>

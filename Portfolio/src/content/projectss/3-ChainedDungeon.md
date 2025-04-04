@@ -1,5 +1,6 @@
 ---
     title: "The Chained Dungeon"
+    href: "https://drive.google.com/drive/folders/1TbB_2g_o13Wu9z8yuZpmMJQFqrDO1rDR?usp=sharing"
     description: "Juego de mazmorras"
     imageUrl: "src/assets/projects-images/TheCD.png"
     techs:
@@ -15,3 +16,4 @@ Desarrollado como proyecto integrador universitario, este **juego** combina elem
 - **Enemigos**: Clasificados en *normales*, *mini jefes* y *jefes finales*.
 - **Ítems**: Varios ítems que el jugador puede recolectar para mejorar sus habilidades.
 - **Sistema de niveles**: Basado en experiencia (XP), ofrece beneficios al jugador
+
