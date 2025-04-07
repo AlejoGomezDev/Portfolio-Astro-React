@@ -11,13 +11,13 @@ interface ProjectProps {
     description: string;
     imageUrl: string;
     techs: Tech[];
-    href:string;
+    href: string;
     content: string;
   };
 }
 
 export function Project({ project }: ProjectProps) {
-  const { title, description, imageUrl, techs, content,href } = project;
+  const { title, description, imageUrl, techs, content, href } = project;
   const [expand, setExpand] = useState(false);
 
   const handleClick = () => {
@@ -28,62 +28,76 @@ export function Project({ project }: ProjectProps) {
     <div
       id="individual-project"
       className="
-    bg-white/1
-    cursor-pointer
-    hover:scale-102
-    hover:brightness-120
-    transition-all
-    duration-300
-    ease-in-out
-    project text-center p-5
-    h-min
-    border-1
-    border-violet-border
-   
-    "
+        bg-white/1
+        cursor-pointer
+        hover:brightness-120
+        transition-all
+        duration-300
+        ease-in-out
+        p-5
+        border-1
+        border-violet-border
+        flex
+        flex-col
+        h-min
+        relative
+        pb-10
+      "
       onClick={handleClick}
     >
-      {!expand ? (
-        <div
-          className="
-        flex
-        flex-col 
-        gap-5
+      <h1 className="text-2xl">{title}</h1>
+
+      <img src={imageUrl} alt={title} className="w-100 h-50 my-4" />
+
+      <div className="flex w-full justify-around mb-4">
+        {techs.map((tech, index) => (
+          <img
+            key={index}
+            src={tech.iconUrl}
+            alt={tech.alt}
+            className="h-8 w-auto"
+          />
+        ))}
+      </div>
+      
+      <div
+        className="
+          grid
+          transition-all
+          duration-300
+          ease-in-out
+          overflow-hidden
         "
-        >
-          <h1 className="text-2xl">{title}</h1>
-
-          <img src={imageUrl} alt={title} className="w-100 h-50" />
-
-          <div className="flex w-full justify-around">
-            {techs.map((tech, index) => {
-              const { alt, iconUrl } = tech;
-              return (
-                <img
-                  key={index}
-                  src={iconUrl}
-                  alt={alt}
-                  className="h-8 w-auto"
-                />
-              );
-            })}
-          </div>
-        </div>
-      ) : (
-        <div className="col-span-2">
-          <h1 className="text-2xl">{title}</h1>
-          <h2 className="text-xl"> {description}</h2>
+        style={{
+          gridTemplateRows: expand ? "1fr" : "0fr",
+        }}
+      >
+        <div className="min-h-0 overflow-hidden">
+          <h2 className="text-xl">{description}</h2>
           <div
-            className="[&_p]:my-4
-      [&_ul]:list-disc [&_ul]:pl-6
-      [&_li]:my-2
-      [&_strong]:font-bold
-      text-left"
+            className="
+              [&_p]:my-4
+              [&_ul]:list-disc [&_ul]:pl-6
+              [&_li]:my-2
+              [&_strong]:font-bold
+              text-left
+            "
             dangerouslySetInnerHTML={{ __html: content }}
           />
-          <a href={href} target="_blank" onClick={(e) => e.stopPropagation()} className="text-blue-500 ">Ver más...</a>
+          <a
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={(e) => e.stopPropagation()}
+            className="text-blue-500 inline-block mt-4"
+          >
+            Ver más...
+          </a>
         </div>
-      )}
+      </div>
+      <footer className="bg-gray-900 absolute bottom-0 left-0 right-0">
+        <h1> {!expand? "Expandir contenido ▼ ":"Contraer contenido ▲"}</h1>
+      </footer>
     </div>
   );
 }
