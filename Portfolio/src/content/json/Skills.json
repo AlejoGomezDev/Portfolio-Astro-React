@@ -103,6 +103,7 @@
             "icon": "src/assets/logos/skills/sqlServer.png",
             "alt": "SQL Server"
           },
+          
           {
             "name": "MySQL",
             "icon": "src/assets/logos/skills/mysql.png",
