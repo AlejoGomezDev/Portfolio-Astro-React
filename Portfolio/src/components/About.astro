@@ -5,19 +5,19 @@ const cv = {
   text: "Ver mi CV",
 };
 ---
-<div class="w-2/3 m-auto ">
+<div class="w-80 sm:w-2/3 m-auto ">
     <h3 class="text-5xl pb-15">Sobre Mí</h3>
-    <div id="about" class="w-full p-6 md:gap-15 flex flex-row border-1 border-violet-border">
+    <div id="about" class="w-full p-6 md:gap-15 flex flex-col sm:flex-row border-1 border-violet-border">
 
-        <div class="w-2/5 flex">
-          <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg max-w-xs m-auto object-contain"> 
+        <div class="w-full sm:w-2/5 flex">
+          <img src="src/assets/personal-images/imagenPersonal.png" alt="Imagen Personal" class="rounded-lg w-full max-w-xs m-auto object-contain"> 
 
         </div>
       
-        <div class="p-6 text-left w-3/5">
+        <div class="p-6 text-left w-full sm:w-3/5">
           <div class="mb-6">
               <h4 class="text-2xl text-gray-300 mb-2">
-                  ¡Hola! Soy <span class="text-4xl text-white font-semibold">Alejo Gomez</span>
+                  ¡Hola! Soy <span class="block sm:inline text-3xl sm:text-4xl text-white font-semibold">Alejo Gomez</span>
               </h4>
           </div>
           

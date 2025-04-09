@@ -1,19 +1,19 @@
 ---
 import ContactForm from "./atoms/ContactForm.astro"
-import SocialAnchor from '../components/atoms/ContactAnchor.astro';
+import ContactAnchor from '../components/atoms/ContactAnchor.astro';
 import SocialLinks from '../content/json/SocialLinks.json';
 
 
 const SocialData = SocialLinks.socialLinks
 ---
-<div class="w-2/3 m-auto mb-32">
+<div class="w-80 sm:w-2/3 m-auto mb-32">
     <h3 class="text-5xl pb-15">Contacto</h3>
-    <div class="gap-6 grid grid-cols-[1fr_2fr]">
-        <div id="contact-div" class="border-violet-border p-5">
+    <div class="gap-6 grid grid-cols-1 sm:grid-cols-[1fr_2fr]">
+        <div id="contact-div" class="border-violet-border p-5 sm:mb-0 mb-5 ">
             {
                 SocialData.map((link)=>{
                     return(
-                        <SocialAnchor {...link}/>
+                        <ContactAnchor {...link}/>
                     )
                 })
             }

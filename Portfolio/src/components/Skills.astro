@@ -4,16 +4,17 @@ import Category from './Molecules/Category.astro';
 const skills = SkillsJson.Skills;
 
 ---
-
-<h3 class="text-5xl pb-10">
-    Habilidades
-</h3>
-<div>
-    {
-       skills.map((category)=>{
-        return(
-            <Category {...category}/>
-        )
-       }) 
-    }
+<div class="sm:w-2/3 w-80 m-auto">
+    <h3 class="text-5xl pb-10">
+        Habilidades
+    </h3>
+    <div>
+        {
+           skills.map((category)=>{
+            return(
+                <Category {...category}/>
+            )
+           }) 
+        }
+    </div>
 </div>

@@ -47,7 +47,7 @@ export function Project({ project }: ProjectProps) {
     >
       <h1 className="text-2xl">{title}</h1>
 
-      <img src={imageUrl} alt={title} className="w-100 h-50 my-4" />
+      <img src={imageUrl} alt={title} className="w-100 h-40 sm:h-50 my-4 m-auto" />
 
       <div className="flex w-full justify-around mb-4">
         {techs.map((tech, index) => (

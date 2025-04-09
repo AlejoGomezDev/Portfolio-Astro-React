@@ -7,24 +7,23 @@ interface Tech {
 }
 ---
 
-<aside id = "individual-experience" class="mb-20 p-6 grid grid-cols-2 border-1 border-violet-border grid-rows-[4fr_1fr] bg-white/1 backdrop-blur-3xl">
+<aside id="individual-experience" class="mb-20 p-6 grid grid-cols-1 sm:grid-cols-2 border border-violet-border grid-rows-[auto_auto] gap-5 sm:gap-0 sm:grid-rows-[4fr_1fr]">
 
-  <a href={url} target="_blank" class="w-2/3 row-span-2 self-center">
+  <a href={url} target="_blank" class="w-full sm:w-2/3 row-span-1 sm:row-span-2 self-center m-auto sm:m-0">
     <div>
       <img src={imageUrl} alt={alt} class="rounded hover:scale-102 transition-all duration-200 ease-in" />
     </div>
   </a>
 
-  <div class="mx-auto px-5 ">
+  <div class="mx-auto px-5">
     <h3 class="text-3xl font-semibold mb-4">{title}</h3>
-    <Content/>
+    <Content />
   </div>
 
-  <div class="col-start-2 mt-6 flex justify-around h-auto">
+  <div class="mt-6 flex justify-around h-auto col-span-1 sm:col-start-2">
     {
       techs.map((tech: Tech) => {
         const { alt, iconUrl } = tech;
-
         return <img src={iconUrl} alt={alt} class="h-8 w-auto" />;
       })
     }
