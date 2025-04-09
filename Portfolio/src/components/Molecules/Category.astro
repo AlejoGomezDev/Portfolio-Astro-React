@@ -9,7 +9,7 @@ interface Skill {
 }
 
 interface SkillGroup {
-  type:string
+  type: string;
   skills: Skill[];
 }
 
@@ -20,62 +20,56 @@ interface SingleSkill {
 }
 
 type Item = SkillGroup | SingleSkill;
+
+function isSkillGroup(item: Item): item is SkillGroup {
+  return "skills" in item;
+}
+
+// Separar en individuales y grupos
+const individualSkills = items.filter(item => !isSkillGroup(item)) as SingleSkill[];
+const skillGroups = items.filter(isSkillGroup);
 ---
 
 <style>
-
-  #category-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 1rem;
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
     padding: 1rem;
+    justify-content: flex-start;
   }
-  
-  #extra-skill-container {
-    grid-column: 1 / -1;
-  }
-  
-  #extra-skill-container > div {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 1rem;
-  }
-  
+
   @media (max-width: 480px) {
-    #category-container, 
-    #extra-skill-container > div {
-      justify-items: center
-      grid-template-columns: repeat(auto-fit,60px);
-      gap: 0.5rem;
+    .skill-list {
+      justify-content: left;
+      gap: 1rem;
     }
-    
   }
+
 </style>
 
-<fieldset id="individual-category" class="text-center text-white w-full max-w-full m-auto border-1 rounded-xl mb-8 border-1 border-violet-border">
+<fieldset class="text-white w-full max-w-full m-auto border border-violet-border rounded-xl mb-8">
   <legend class="text-xl sm:text-3xl text-left ml-3 px-5">{category}</legend>
-  <div id="category-container">
-    {
-      items.map((item: Item) => {
-        if ("skills" in item) {
-          return (
-            <fieldset id="extra-skill-container" class="flex flex-col border-1 rounded-xl border-1 sm:mx-3 border-violet-border">
-              <legend class="text-lg text-left px-3 ml-2">{item.type}</legend>
-              <div class="px-4 pb-4">
-                {
-                  item.skills.map((skill: Skill) => (
-                    <SkillCard skill={skill}/>
-                  ))
-                }
-              </div>
-            </fieldset>
-          );
-        } else {
-          return (
-            <SkillCard skill={item}/>
-          );
-        }
-      })
-    }
+  <div class="flex flex-col w-full p-4 gap-4">
+
+    {individualSkills.length > 0 && (
+      <div class="skill-list">
+        {individualSkills.map(skill => (
+          <SkillCard skill={skill} />
+        ))}
+      </div>
+    )}
+
+    {skillGroups.map(group => (
+      <fieldset class="w-full max-w-9/10 border border-violet-border rounded-xl m-auto last:mb-8">
+        <legend class="text-lg text-left px-3 ml-2">{group.type}</legend>
+        <div class="skill-list">
+          {group.skills.map(skill  => (
+            <SkillCard skill={skill} />
+          ))}
+        </div>
+      </fieldset>
+    ))}
+
   </div>
 </fieldset>
