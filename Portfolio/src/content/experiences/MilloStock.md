@@ -18,7 +18,7 @@ techs:
 
 ---
 
-## Aplicación de Gestión para local de indumentaria
+### Aplicación de Gestión para local de indumentaria
 
 Esta aplicación permite realizar un seguimiento del **stock**, **ventas**, **clientes** y **facturación**.  
 

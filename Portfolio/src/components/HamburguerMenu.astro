@@ -1,0 +1,105 @@
+---
+---
+
+<script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      const panelBtn = document.querySelector('.panel-btn');
+      const panel = document.querySelector('.panel');
+      const menuLinks = document.querySelectorAll('.menu a');
+
+      function toggleMenu() {
+        panel?.classList.toggle('is-active');
+        panelBtn?.classList.toggle('is-active');
+      }
+  
+      panelBtn?.addEventListener('click', toggleMenu);
+  
+
+      menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          panel?.classList.remove('is-active');
+          panelBtn?.classList.remove('is-active');
+        });
+      });
+    });
+  </script>
+
+
+<style>
+  .panel-btn {
+    position: fixed;
+    z-index: 999;
+    bottom: 1em;
+    right: 1em;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    background-color: #3d0d39 !important;
+  }
+
+  .panel {
+    position: fixed;
+    z-index: 997;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--mainOpacity2Color);
+    width: 100%;
+    transform: translate(0, -100%);
+    transition: transform .3s ease;
+  }
+
+  .panel.is-active {
+    transform: translate(0, 0);
+  }
+
+  .menu {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(41, 3, 41, 0.973);
+
+  }
+
+  .menu a {
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: all .3s ease;
+  }
+
+  .menu a:hover {
+    font-weight: bold;
+    background-color: rgba(73, 7, 73, 0.918)
+  }
+</style>
+
+<div class="sm:hidden">
+    <button class="panel-btn hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    
+    <aside class="panel">
+      <nav class="menu">
+        <a href="#experience">Experiencia</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </aside>
+</div>

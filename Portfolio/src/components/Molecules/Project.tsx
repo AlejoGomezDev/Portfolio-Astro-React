@@ -45,7 +45,7 @@ export function Project({ project }: ProjectProps) {
       "
       onClick={handleClick}
     >
-      <h1 className="text-2xl">{title}</h1>
+      <h3 className="text-2xl">{title}</h3>
 
       <img src={imageUrl} alt={title} className="w-100 h-40 sm:h-50 my-4 m-auto" />
 
@@ -73,7 +73,7 @@ export function Project({ project }: ProjectProps) {
         }}
       >
         <div className="min-h-0 overflow-hidden">
-          <h2 className="text-xl">{description}</h2>
+          <h4 className="text-xl">{description}</h4>
           <div
             className="
               [&_p]:my-4
@@ -96,7 +96,7 @@ export function Project({ project }: ProjectProps) {
         </div>
       </div>
       <footer className="bg-gray-900 absolute bottom-0 left-0 right-0">
-        <h1> {!expand? "Expandir contenido ▼ ":"Contraer contenido ▲"}</h1>
+        <h4> {!expand? "Expandir contenido ▼ ":"Contraer contenido ▲"}</h4>
       </footer>
     </div>
   );

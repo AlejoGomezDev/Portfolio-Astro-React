@@ -8,12 +8,14 @@ import Skills from '../components/Skills.astro';
 import About from '../components/About.astro';
 import Contact from '../components/Contact.astro';
 import Footer from '../components/Footer.astro';
+import HamburguerMenu from '../components/HamburguerMenu.astro';
 ---
 
 <Layout>
-	<header class="h-16 top-0 left-0 fixed w-full shadow-md z-50 backdrop-blur-sm">
+	<header class="hidden sm:fixed h-16 top-0 left-0 fixed w-full shadow-md z-50 backdrop-blur-sm">
 		<NavBar />
 	</header>
+	<HamburguerMenu client:load/>
 	<main class="pt-16">
 
 		<section id="home" class="mb-32">

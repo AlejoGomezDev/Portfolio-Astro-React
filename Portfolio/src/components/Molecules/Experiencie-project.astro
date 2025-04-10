@@ -7,26 +7,40 @@ interface Tech {
 }
 ---
 
-<aside id="individual-experience" class="mb-20 p-6 grid grid-cols-1 sm:grid-cols-2 border border-violet-border grid-rows-[auto_auto] gap-5 sm:gap-0 sm:grid-rows-[4fr_1fr]">
+<aside
+  id="individual-experience"
+  class="mb-20 p-6 grid grid-cols-1 sm:grid-cols-2 border border-violet-border grid-rows-[auto_auto] gap-5 sm:gap-0 sm:grid-cols-[1fr_1fr] sm:grid-rows-[1fr]"
+>
+  <div >
+    <a
+      href={url}
+      target="_blank"
+      class="w-full row-span-1 self-center m-auto sm:m-0"
+    >
 
-  <a href={url} target="_blank" class="w-full sm:w-2/3 row-span-1 sm:row-span-2 self-center m-auto sm:m-0">
-    <div>
-      <img src={imageUrl} alt={alt} class="rounded hover:scale-102 transition-all duration-200 ease-in" />
+        <img
+          src={imageUrl}
+          alt={alt}
+          class="rounded hover:scale-102 sm:w-4/5 m-auto mt-2 transition-all duration-200 ease-in"
+        />
+
+    </a>
+  </div>
+  <div>
+    <div class="mx-auto px-5">
+      <h3 class="text-3xl font-semibold mb-4">{title}</h3>
+      <div class="text-left">
+        <Content />
+      </div>
     </div>
-  </a>
 
-  <div class="mx-auto px-5">
-    <h3 class="text-3xl font-semibold mb-4">{title}</h3>
-    <Content />
+    <div class="mt-6 flex justify-around h-auto col-span-1 sm:col-start-2">
+      {
+        techs.map((tech: Tech) => {
+          const { alt, iconUrl } = tech;
+          return <img src={iconUrl} alt={alt} class="h-8 w-auto" />;
+        })
+      }
+    </div>
   </div>
-
-  <div class="mt-6 flex justify-around h-auto col-span-1 sm:col-start-2">
-    {
-      techs.map((tech: Tech) => {
-        const { alt, iconUrl } = tech;
-        return <img src={iconUrl} alt={alt} class="h-8 w-auto" />;
-      })
-    }
-  </div>
-
 </aside>
