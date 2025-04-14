@@ -28,15 +28,17 @@ export function Project({ project }: ProjectProps) {
     <div
       id="individual-project"
       className="
-        bg-white/1
         cursor-pointer
         hover:brightness-120
         transition-all
         duration-300
         ease-in-out
         p-5
+        bg-neutral-900
         border-1
-        border-violet-border
+        border-zinc-800
+        rounded-2xl
+        overflow-hidden
         flex
         flex-col
         h-min
@@ -95,7 +97,7 @@ export function Project({ project }: ProjectProps) {
           </a>
         </div>
       </div>
-      <footer className="bg-gray-900 absolute bottom-0 left-0 right-0">
+      <footer className="bg-neutral-800 absolute bottom-0 left-0 right-0">
         <h4> {!expand? "Expandir contenido ▼ ":"Contraer contenido ▲"}</h4>
       </footer>
     </div>

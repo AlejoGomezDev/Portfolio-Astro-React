@@ -1,70 +1,79 @@
 @import "tailwindcss";
 @theme {
   --color-violet-bg: rgb(18,8,27); 
-  --color-enfasis: rgb(18,8,27); 
   --color-violet-border:rgb(43, 2, 37);
-  --color-enfasis-text:rgb(109, 23, 96);
+  --color-button-bg:rgb(14, 14, 14);
+}
+/* border-zinc-800 */
+
+:root{
+  --box-shadow: /*0px 0px 5px 2px rgb(80, 80, 80);*/
 }
 
-#experience-projects {
-  box-shadow: 0px 0px 30px 2px rgb(43, 2, 37),
-    inset 0 10px 30px -5px rgba(43, 2, 37, 0.6);
-  background: rgb(1, 3, 15);
-  background: linear-gradient(
-    90deg,
-    rgba(1, 3, 15, 1) 0%,
-    rgb(31, 16, 37) 50%,
-    rgba(5, 4, 18, 1) 100%
-  );
-}
-#individual-experience{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37);
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter';
+  font-weight: 300;
+  letter-spacing: 1px;
+  background:rgb(14, 14, 14);
+
 }
 
 #project-container {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
 }
 
-#individual-project{
-  box-shadow: 0px 0px 10px 5px rgb(43, 2, 37);
+#individual-experience{
+  box-shadow: var(--box-shadow);
 }
+
 #category-container fieldset:last-child{
   margin-bottom: 1rem;
 }
 
+#individual-project{
+  box-shadow: var(--box-shadow);
+}
+
 #individual-category{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37);
+  box-shadow: var(--box-shadow);
 }
 
 #extra-skill-container{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37);
+  box-shadow: var(--box-shadow);
 }
 #about{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37);
+  box-shadow: var(--box-shadow);
 }
 
 #experience-p{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37) ;
+  box-shadow: var(--box-shadow) ;
 }
 
 #contact-div{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37) ;
+  box-shadow:var(--box-shadow);
 }
 
 #submit{
-  box-shadow: 0px 0px 10px 2px rgb(43, 2, 37) ;
+  box-shadow: var(--box-shadow);
 }
 .disabled {
   pointer-events: none;
   opacity: 0.7;
   cursor: not-allowed; 
 }
-#home-shadow{
-  text-shadow:  0px 6px 15px rgb(143, 17, 126) ;
-}
-h1{
+
+h1,h2{
   font-family: 'Manrope';
   font-weight: 500;
+  background: linear-gradient(to bottom, #ffffff, #575657);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
 }
+
