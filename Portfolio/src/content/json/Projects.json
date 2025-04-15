@@ -4,7 +4,7 @@
         "title": "Portfolio Web",
         "description": "Mi portfolio web",
         "imageUrl": "src/assets/projects-images/PortfolioWeb2.png",
-        "href": "",
+        "href": "https://drive.google.com/drive/folders/13NMxndRt0_SmGCm81oToAhaJUNfxUgJI?usp=sharing",
         "techs": [
           {
             "alt": "React",
@@ -125,7 +125,7 @@
         "title": "Portfolio Web (antiguo)",
         "description": "Mi (antiguo) portfolio web",
         "imageUrl": "src/assets/projects-images/PortfolioWeb 1.png",
-        "href":"",
+        "href":"https://drive.google.com/drive/folders/1AwEIYhncSpPz7xzt76bIfM9K3ITeRKYh?usp=sharing",
         "techs": [
           {
             "alt": "JavaScript",

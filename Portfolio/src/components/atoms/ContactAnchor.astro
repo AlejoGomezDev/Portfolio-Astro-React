@@ -13,20 +13,19 @@ const {
   <a 
     href={url} 
     target={target} 
-    class="detalle  "
   >
-    <div class="flex mb-6 hover:scale-102 p-2 transition-all duration-150 ease-in border-1 border-zinc-800 rounded-2xl bg-neutral-900">
+    <div class="gradientBackground flex hover:scale-102 p-2 transition-all duration-150 ease-in rounded-2xl bg-neutral-900">
       
       <div class=" w-1/10 sm:w-1/7 mr-5">
         <img src={imgUrl} alt={alt} class="invert w-2/3 m-auto" />
       </div>
       
-      <div class="w-9/10 text-left flex items-center">{text}</div>
+      <div class="w-9/10 text-left flex items-center ">{text}</div>
 
     </div>
   </a>
 ) : (
-  <div class="flex p-2 hover:scale-102 transition-all duration-150 ease-in border-1 border-zinc-800 rounded-2xl bg-neutral-900 ">
+  <div class="gradientBackground flex p-2 hover:scale-102 transition-all duration-150 ease-in  rounded-2xl bg-neutral-900 ">
     <div class=" w-1/10 sm:w-1/7 mr-5">
       <img src={imgUrl} alt={alt} class="invert w-2/3 m-auto" />
     </div>

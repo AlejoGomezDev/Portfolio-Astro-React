@@ -27,20 +27,20 @@ interface Tech {
     </a>
   </div>
   <div>
-    <div class="mx-auto px-5">
-      <h3 class="text-3xl font-semibold mb-4">{title}</h3>
-      <div class="text-left">
+    <div class="mx-auto px-5 h-full flex flex-col justify-around">
+      <h3 class="text-3xl 2xl:text-4xl font-semibold mb-4">{title}</h3>
+      <div class="text-left 2xl:text-xl">
         <Content />
+      </div>
+      <div class="mt-6 flex justify-around h-auto col-span-1 sm:col-start-2">
+        {
+          techs.map((tech: Tech) => {
+            const { alt, iconUrl } = tech;
+            return <img src={iconUrl} alt={alt} class="h-8 2xl:h-12 w-auto" />;
+          })
+        }
       </div>
     </div>
 
-    <div class="mt-6 flex justify-around h-auto col-span-1 sm:col-start-2">
-      {
-        techs.map((tech: Tech) => {
-          const { alt, iconUrl } = tech;
-          return <img src={iconUrl} alt={alt} class="h-8 w-auto" />;
-        })
-      }
-    </div>
   </div>
 </aside>

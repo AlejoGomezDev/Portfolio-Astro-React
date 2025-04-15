@@ -61,7 +61,7 @@ const skillGroups = items.filter(isSkillGroup);
     )}
 
     {skillGroups.map(group => (
-      <fieldset id="extra-skill-container" class="w-full max-w-9/10 border border-zinc-800 rounded-2xl m-auto last:mb-8">
+      <fieldset id="extra-skill-container" class="w-full border border-zinc-800 rounded-2xl m-auto last:mb-8 p-4">
         <legend class="text-lg text-left ml-2">{group.type}</legend>
         <div class="skill-list">
           {group.skills.map(skill  => (

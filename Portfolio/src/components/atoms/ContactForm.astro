@@ -1,6 +1,6 @@
-<div class="my-auto pt-5 border-1 border-zinc-800 rounded-2xl bg-neutral-900">
-    <h4 class="text-2xl">Envíame un <span class="font-bold">email</span></h4>
-    <form id="contactForm" class="flex flex-col w-full m-auto mt-4 gap-3">
+<div class="my-auto pt-5 border-1 h-full border-zinc-800 rounded-2xl bg-neutral-900">
+    <h4 class="text-2xl">Envíame un <span class="font-bold text-3xl">email</span></h4>
+    <form id="contactForm" class="flex flex-col justify-around w-full m-auto mt-4 gap-3">
       <input
         class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
         type="text"
@@ -38,19 +38,20 @@
         required
       />
   
-      <div id="error" class=" hidden text-red-600 px-10 sm:px-0 font-semibold">
+      <div id="error" class="invisible text-red-600 px-10 sm:px-0 font-semibold">
         <p>Asegurate de introducir los datos de forma correcta</p>
       </div>
   
       <input
-        class="w-fit border-1 border-zinc-700 bg-zinc-800 text-white px-5 py-1 m-auto mt-5 mb-2 rounded-lg cursor-pointer hover:scale-105 transition-all duration-150 ease-in"
+        class="gradientBackground w-fit  text-white px-9 py-2 text-md m-auto rounded-full cursor-pointer hover:scale-105 transition-all duration-150 ease-in"
         type="submit"
         name="submit"
         id="submit"
         value="Enviar"
       />
+
     </form>
-    <div id="response" class="hidden mt-3">
+    <div id="response" class="invisible mt-3">
       <p>¡El mensaje ha sido enviado!</p>
     </div>
     <br />
@@ -101,12 +102,12 @@
         e.preventDefault();
   
         if (!validateForm()) {
-          formError.classList.remove('hidden');
-          formResponse.classList.add('hidden');
+          formError.classList.remove('invisible');
+          formResponse.classList.add('invisible');
           return;
         }
   
-        formError.classList.add('hidden');
+        formError.classList.add('invisible');
         submitBtn.value = 'Enviando...';
         submitBtn.classList.add('disabled');
   
@@ -118,9 +119,9 @@
   
           if (!response.ok) throw new Error('Error en la respuesta del servidor');
   
-          formResponse.classList.remove('hidden');
+          formResponse.classList.remove('invisible');
           contactForm.reset();
-          setTimeout(() => formResponse.classList.add('hidden'), 2000);
+          setTimeout(() => formResponse.classList.add('invisible'), 2000);
         } catch (err) {
           console.error('Error al enviar el formulario:', err);
         } finally {

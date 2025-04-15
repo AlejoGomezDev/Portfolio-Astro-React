@@ -16,23 +16,21 @@ import HamburguerMenu from '../components/HamburguerMenu.astro';
 		<NavBar />
 	</header>
 	<HamburguerMenu client:load/>
-	<main class="pt-16">
-
-		<section id="home" class="mb-32">
-			<Home />
-		</section>
-
-		<div id="experience-projects">
-
-			<section id="experience" class="h-auto text-white text-center w-full pt-32" >
-				<Experience/>
+	<main class="pt-16 m-auto ">
+			<section id="home" class="mb-32">
+				<Home />
 			</section>
-			<section id="projects" class="text-white pt-32 pb-32">
-				<Projects />
-			</section>
+
+			<div id="experience-projects">
+				<section id="experience" class="h-auto text-white text-center w-full pt-32" >
+					<Experience/>
+				</section>
+				<section id="projects" class="text-white pt-32 pb-32">
+					<Projects />
+				</section>
+				
+			</div>
 			
-		</div>
-
 		<section id="skills" class="text-white pt-32 pb-32 text-center">
 			<Skills/>
 		</section>
@@ -44,7 +42,7 @@ import HamburguerMenu from '../components/HamburguerMenu.astro';
 		<section id="contact" class="text-white pt-32 pb-32 text-center">
 			<Contact />
 		</section>
-		<section class="bg-neutral-900 h-10 flex items-center justify-center">
+		<section class="bg-neutral-900 h-10 flex items-center justify-center  gradientBackground">
 			<Footer>
 		</section>
 	</main>

@@ -9,7 +9,7 @@ const SocialData = SocialLinks.socialLinks
 <div class="w-80 sm:w-2/3 m-auto mb-32">
     <h2 class="text-5xl pb-15">Contacto</h2>
     <div class="gap-6 grid grid-cols-1 sm:grid-cols-[1fr_2fr]">
-        <div id="contact-div" class="sm:mb-0 mb-5 flex flex-col justify-around">
+        <div id="contact-div" class="sm:mb-0 mb-5 flex flex-col justify-between h-full">
             {
                 SocialData.map((link)=>{
                     return(
@@ -19,7 +19,7 @@ const SocialData = SocialLinks.socialLinks
             }
         </div>
         <div id="contact-div" class="flex flex-col"> 
-            <ContactForm class="flex-grow"/>  
+            <ContactForm/>  
         </div>
     </div>
 
