@@ -2,19 +2,19 @@
 title: "Millo Store Stock"
 description: "Aplicación de Gestion para local de indumentaria"
 alt: "Millo Stock"
-imageUrl: "/src/assets/projects-images/MilloStock.jpg"
+imageUrl: "/assets/projects-images/MilloStock.jpg"
 url: "https://drive.google.com/drive/folders/1qZrWAn2UyHMZU62zcyTnbdcwbAQOUQA7?usp=drive_link"
 techs:
     - alt: "C#"
-      iconUrl: "/src/assets/logos/skills/cSharp.png"
+      iconUrl: "assets/logos/skills/cSharp.png"
     - alt: ".NET"
-      iconUrl: "/src/assets/logos/skills/net.png"
+      iconUrl: "/assets/logos/skills/net.png"
     - alt: "SQL"
-      iconUrl: "/src/assets/logos/skills/sql.png"
+      iconUrl: "/assets/logos/skills/sql.png"
     - alt: "Azure"
-      iconUrl: "/src/assets/logos/skills/azure.png"
+      iconUrl: "/assets/logos/skills/azure.png"
     - alt: "SQL Server"
-      iconUrl: "/src/assets/logos/skills/sqlServer.png"
+      iconUrl: "/assets/logos/skills/sqlServer.png"
 
 ---
 
