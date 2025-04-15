@@ -5,22 +5,22 @@
         "items": [
           {
             "name": "C++",
-            "icon": "public/assets/logos/skills/c++.png",
+            "icon": "/assets/logos/skills/c++.png",
             "alt": "C++"
           },
           {
             "name": "C#",
-            "icon": "public/assets/logos/skills/cSharp.png",
+            "icon": "/assets/logos/skills/cSharp.png",
             "alt": "C#"
           },
           {
             "name": "Java",
-            "icon": "public/assets/logos/skills/java.png",
+            "icon": "/assets/logos/skills/java.png",
             "alt": "Java"
           },
           {
             "name": "SQL",
-            "icon": "public/assets/logos/skills/sql.png",
+            "icon": "/assets/logos/skills/sql.png",
             "alt": "SQL"
           }
         ]
@@ -33,17 +33,17 @@
             "skills": [
               {
                 "name": "HTML5",
-                "icon": "public/assets/logos/skills/html5.png",
+                "icon": "/assets/logos/skills/html5.png",
                 "alt": "HTML5"
               },
               {
                 "name": "CSS3",
-                "icon": "public/assets/logos/skills/css3.png",
+                "icon": "/assets/logos/skills/css3.png",
                 "alt": "CSS3"
               },
               {
                 "name": "JavaScript",
-                "icon": "public/assets/logos/skills/js.png",
+                "icon": "/assets/logos/skills/js.png",
                 "alt": "JavaScript"
               }
             ]
@@ -53,22 +53,22 @@
             "skills": [
               {
                 "name": "React",
-                "icon": "public/assets/logos/skills/react.png",
+                "icon": "/assets/logos/skills/react.png",
                 "alt": "React"
               },
               {
                 "name": "Astro",
-                "icon": "public/assets/logos/skills/astro.png",
+                "icon": "/assets/logos/skills/astro.png",
                 "alt": "Astro"
               },
               {
                 "name": "Bootstrap",
-                "icon": "public/assets/logos/skills/bootstrap.png",
+                "icon": "/assets/logos/skills/bootstrap.png",
                 "alt": "Bootstrap"
               },
               {
                 "name": "Tailwind",
-                "icon": "public/assets/logos/skills/tailwind.png",
+                "icon": "/assets/logos/skills/tailwind.png",
                 "alt": "Tailwind"
               }
             ]
@@ -80,17 +80,17 @@
         "items": [
           {
             "name": "Node.js",
-            "icon": "public/assets/logos/skills/node.png",
+            "icon": "/assets/logos/skills/node.png",
             "alt": "Node.js"
           },
           {
             "name": "Express",
-            "icon": "public/assets/logos/skills/express.png",
+            "icon": "/assets/logos/skills/express.png",
             "alt": "Express"
           },
           {
             "name": ".NET",
-            "icon": "public/assets/logos/skills/net.png",
+            "icon": "/assets/logos/skills/net.png",
             "alt": ".NET"
           }
         ]
@@ -100,13 +100,13 @@
         "items": [
           {
             "name": "SQL Server",
-            "icon": "public/assets/logos/skills/sqlServer.png",
+            "icon": "/assets/logos/skills/sqlServer.png",
             "alt": "SQL Server"
           },
           
           {
             "name": "MySQL",
-            "icon": "public/assets/logos/skills/mysql.png",
+            "icon": "/assets/logos/skills/mysql.png",
             "alt": "MySQL"
           }
         ]
@@ -116,17 +116,17 @@
         "items": [
           {
             "name": "SFML",
-            "icon": "public/assets/logos/skills/sfml.png",
+            "icon": "/assets/logos/skills/sfml.png",
             "alt": "SFML"
           },
           {
             "name": "Azure",
-            "icon": "public/assets/logos/skills/azure.png",
+            "icon": "/assets/logos/skills/azure.png",
             "alt": "Azure"
           },
           {
             "name": "GitHub",
-            "icon": "public/assets/logos/skills/github.png",
+            "icon": "/assets/logos/skills/github.png",
             "alt": "GitHub"
           }
         ]
