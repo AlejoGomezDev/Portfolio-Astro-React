@@ -3,20 +3,20 @@
       {
         "title": "Portfolio Web",
         "description": "Mi portfolio web",
-        "imageUrl": "src/assets/projects-images/PortfolioWeb2.png",
+        "imageUrl": "public/assets/projects-images/PortfolioWeb2.png",
         "href": "https://drive.google.com/drive/folders/13NMxndRt0_SmGCm81oToAhaJUNfxUgJI?usp=sharing",
         "techs": [
           {
             "alt": "React",
-            "iconUrl": "/src/assets/logos/skills/react.png"
+            "iconUrl": "public/assets/logos/skills/react.png"
           },
           {
             "alt": "Astro",
-            "iconUrl": "/src/assets/logos/skills/astro.png"
+            "iconUrl": "public/assets/logos/skills/astro.png"
           },
           {
             "alt": "Tailwind CSS",
-            "iconUrl": "/src/assets/logos/skills/tailwind.png"
+            "iconUrl": "public/assets/logos/skills/tailwind.png"
           }
         ],
         "content": "<p>Mi portfolio web actual es una demostración del avance tecnológico que alcancé en el ultimo tiempo.\nApliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el rendimiento, escalabilidad y estructura del mismo.</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Diseño <strong>responsive</strong>.</li>\n<li>Uso de <strong>React</strong> para la interactividad y el manejo de estados.</li>\n<li>Generación de contenido dinámico utilizando <strong>Astro</strong>.</li>\n</ul>"
@@ -24,24 +24,24 @@
       {
         "title": "Reactive Search",
         "description": "Biblioteca de Peliculas Reactiva",
-        "imageUrl": "src/assets/projects-images/Reactive Search 2.png",
+        "imageUrl": "public/assets/projects-images/Reactive Search 2.png",
         "href": "https://drive.google.com/drive/folders/1rJDNOde9oeIJnAYOWgGE047xEivRVy7K?usp=sharing",
         "techs": [
           {
             "alt": "React",
-            "iconUrl": "/src/assets/logos/skills/react.png"
+            "iconUrl": "public/assets/logos/skills/react.png"
           },
           {
             "alt": "JavaScript",
-            "iconUrl": "/src/assets/logos/skills/js.png"
+            "iconUrl": "public/assets/logos/skills/js.png"
           },
           {
             "alt": "CSS3",
-            "iconUrl": "/src/assets/logos/skills/css3.png"
+            "iconUrl": "public/assets/logos/skills/css3.png"
           },
           {
             "alt": "HTML5",
-            "iconUrl": "/src/assets/logos/skills/html5.png"
+            "iconUrl": "public/assets/logos/skills/html5.png"
           }
         ],
         "content": "<p>Aplicación <strong>SPA</strong> desarrollada con <strong>React puro</strong>, que permite a los usuarios buscar títulos de películas y obtener resultados en tiempo real mediante el consumo de una <strong>API externa</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Búsqueda de películas</strong> con resultados en tiempo real.</li>\n<li><strong>Paginación</strong> para mejorar la experiencia de usuario.</li>\n<li><strong>Context API</strong> para la gestión de estados y contextos globales.</li>\n<li><strong>React Router DOM</strong> para la navegación.</li>\n<li>Optimización de rendimiento utilizando <strong>diferentes tipos de estados</strong>.</li>\n</ul>"
@@ -49,16 +49,16 @@
       {
         "title": "The Chained Dungeon",
         "description": "Juego de mazmorras",
-        "imageUrl": "src/assets/projects-images/TheCD.png",
+        "imageUrl": "public/assets/projects-images/TheCD.png",
         "href" : "https://drive.google.com/drive/folders/1TbB_2g_o13Wu9z8yuZpmMJQFqrDO1rDR?usp=sharing",
         "techs": [
           {
             "alt": "C++",
-            "iconUrl": "/src/assets/logos/skills/c++.png"
+            "iconUrl": "public/assets/logos/skills/c++.png"
           },
           {
             "alt": "SFML",
-            "iconUrl": "/src/assets/logos/skills/sfml.png"
+            "iconUrl": "public/assets/logos/skills/sfml.png"
           }
         ],
         "content": "<p>Desarrollado como proyecto integrador universitario, este <strong>juego</strong> combina elementos clásicos de <strong>exploración en mazmorras</strong> con un sistema de <strong>combate</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Enemigos</strong>: Clasificados en <em>normales</em>, <em>mini jefes</em> y <em>jefes finales</em>.</li>\n<li><strong>Ítems</strong>: Varios ítems que el jugador puede recolectar para mejorar sus habilidades.</li>\n<li><strong>Sistema de niveles</strong>: Basado en experiencia (XP), ofrece beneficios al jugador</li>\n</ul>"
@@ -66,23 +66,23 @@
       {
         "title": "Sistema de Gestión para Clínica",
         "description": "Sistema de gestión",
-        "imageUrl": "src/assets/projects-images/Clinica 1.png",
+        "imageUrl": "public/assets/projects-images/Clinica 1.png",
         "href" :"https://drive.google.com/drive/folders/1cqnZapKfmqFRs4z3m3U-GHEs79RyamSz?usp=sharing",
         "techs": [
           {
             "name": "C#",
             "alt": "C#",
-            "iconUrl": "/src/assets/logos/skills/cSharp.png"
+            "iconUrl": "public/assets/logos/skills/cSharp.png"
           },
           {
             "name": "SQL",
             "alt": "SQL",
-            "iconUrl": "/src/assets/logos/skills/sql.png"
+            "iconUrl": "public/assets/logos/skills/sql.png"
           },
           {
             "name": ".NET",
             "alt": ".NET",
-            "iconUrl": "/src/assets/logos/skills/net.png"
+            "iconUrl": "public/assets/logos/skills/net.png"
           }
         ],
 "content":"<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión integral</strong> diseñado para administrar una <strong>clínica médica</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n  <li>Autenticación mediante sistema de login diferenciado por tipo de usuario.</li>\n  <li>Soporte para múltiples roles:\n    <ul>\n      <li>Administrador</li>\n      <li>Médico</li>\n      <li>Paciente</li>\n    </ul>\n  </li>\n  <li>Acceso a contenido y funcionalidades según el tipo de usuario.</li>\n  <li>Manejo de la sesión mediante Cookies y/o SessionStorage.</li>\n  <li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de médicos, pacientes y turnos.</li>\n  <li>Generación de <strong>informes</strong> basados en datos almacenados en la DB.</li>\n</ul>"
@@ -91,32 +91,32 @@
       {
         "title": "CodeFlix",
         "description": "Biblioteca de Peliculas",
-        "imageUrl": "src/assets/projects-images/CodeFlix1.png",
+        "imageUrl": "public/assets/projects-images/CodeFlix1.png",
         "href":"https://drive.google.com/drive/folders/1VgIciZZLKRH8c-jHnSiDECDPHDSvqFil?usp=sharing",
         "techs": [
           {
             "alt": "JavaScript",
-            "iconUrl": "/src/assets/logos/skills/js.png"
+            "iconUrl": "public/assets/logos/skills/js.png"
           },
           {
             "alt": "HTML5",
-            "iconUrl": "/src/assets/logos/skills/html5.png"
+            "iconUrl": "public/assets/logos/skills/html5.png"
           },
           {
             "alt": "CSS3",
-            "iconUrl": "/src/assets/logos/skills/css3.png"
+            "iconUrl": "public/assets/logos/skills/css3.png"
           },
           {
             "alt": "MySQL",
-            "iconUrl": "/src/assets/logos/skills/mysql.png"
+            "iconUrl": "public/assets/logos/skills/mysql.png"
           },
           {
             "alt": "NodeJS",
-            "iconUrl": "/src/assets/logos/skills/node.png"
+            "iconUrl": "public/assets/logos/skills/node.png"
           },
           {
             "alt": "Express",
-            "iconUrl": "/src/assets/logos/skills/express.png"
+            "iconUrl": "public/assets/logos/skills/express.png"
           }
         ],
         "content": "<p>Proyecto final para la certificación de <strong>Web Developer</strong>, esta aplicación web permite gestionar una <strong>biblioteca de películas</strong> mediante el consumo de una <strong>API externa</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<ul>\n<li><strong>Inicio de sesión</strong>.</li>\n<li>Manejo de <strong>usuarios</strong> con ABML (alta, baja, modificación, listado).</li>\n<li>Sistema de <strong>comentarios</strong>.</li>\n<li>Integración con una base de datos <strong>MySQL</strong> para el almacenamiento de información.</li>\n</ul>\n</li>\n</ul>"
@@ -124,20 +124,20 @@
       {
         "title": "Portfolio Web (antiguo)",
         "description": "Mi (antiguo) portfolio web",
-        "imageUrl": "src/assets/projects-images/PortfolioWeb 1.png",
+        "imageUrl": "public/assets/projects-images/PortfolioWeb 1.png",
         "href":"https://drive.google.com/drive/folders/1AwEIYhncSpPz7xzt76bIfM9K3ITeRKYh?usp=sharing",
         "techs": [
           {
             "alt": "JavaScript",
-            "iconUrl": "/src/assets/logos/skills/js.png"
+            "iconUrl": "public/assets/logos/skills/js.png"
           },
           {
             "alt": "HTML5",
-            "iconUrl": "/src/assets/logos/skills/html5.png"
+            "iconUrl": "public/assets/logos/skills/html5.png"
           },
           {
             "alt": "CSS3",
-            "iconUrl": "/src/assets/logos/skills/css3.png"
+            "iconUrl": "public/assets/logos/skills/css3.png"
           }
         ],
         "content": "<p>Esta aplicación web fue desarrollada inicialmente para mostrar mi perfil profesional.\nLa diseñé con mis primeros conocimientos de desarrollo web, y fue un gran reto que me puso a prueba y me permitió aprender mucho en el proceso.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Barra de navegación</strong>.</li>\n<li><strong>Información detallada</strong> sobre mi experiencia y proyectos.</li>\n<li>Mi stack completo de <strong>Tecnologías</strong> y <strong>Herramientas</strong></li>\n<li><strong>Formulario de contacto</strong> hacía mi correo electrónico.</li>\n<li><strong>Diseño Responsive</strong>.</li>\n</ul>\n<p>Al progresar como programador, me di cuenta de las diferentes inconsistencias del proyecto y de que no estaba empleando las mejores practicas ni los métodos mas eficientes.Por eso,decidi rehacer mi pagina utilizando tecnologias modernas para mejorar la estructura,rendimiento y escalabilidad.</p>"
@@ -145,24 +145,24 @@
       {
         "title": "Burguer::Code",
         "description": "Sitio web de hamburguesería",
-        "imageUrl": "src/assets/projects-images/burguerCode 1.png",
+        "imageUrl": "public/assets/projects-images/burguerCode 1.png",
         "href":"https://drive.google.com/drive/folders/1AhBDPoYYdZZByxVOd6jMHMNGDZENAHst?usp=sharing",
         "techs": [
           {
             "alt": "JavaScript",
-            "iconUrl": "/src/assets/logos/skills/js.png"
+            "iconUrl": "public/assets/logos/skills/js.png"
           },
           {
             "alt": "HTML5",
-            "iconUrl": "/src/assets/logos/skills/html5.png"
+            "iconUrl": "public/assets/logos/skills/html5.png"
           },
           {
             "alt": "CSS3",
-            "iconUrl": "/src/assets/logos/skills/css3.png"
+            "iconUrl": "public/assets/logos/skills/css3.png"
           },
           {
             "alt": "BootStrap",
-            "iconUrl": "/src/assets/logos/skills/bootstrap.png"
+            "iconUrl": "public/assets/logos/skills/bootstrap.png"
           }
         ],
         "content": "<p>Desarrollado con un enfoque en el <strong>diseño visual</strong> y el <strong>impacto estético</strong>, este sitio web promociona una <strong>hamburguesería</strong> ofreciendo:</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Navegación <strong>intuitiva</strong> por su <strong>menú</strong>.</li>\n<li><strong>Información detallada</strong> sobre sus sucursales.</li>\n<li><strong>Formulario de postulación</strong> para interesados en trabajar en el local.</li>\n<li><strong>Diseño</strong>: Responsive y atractivo, ideal para captar la atención del público objetivo y mejorar la experiencia del usuario.</li>\n</ul>"
