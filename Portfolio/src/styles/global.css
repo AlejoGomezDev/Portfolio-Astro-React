@@ -1,13 +1,11 @@
 @import "tailwindcss";
 @theme {
   --color-violet-bg: rgb(18,8,27); 
-  --color-violet-border:rgb(43, 2, 37);
-  --color-button-bg:rgb(14, 14, 14);
+
 }
-/* border-zinc-800 */
 
 :root{
-  --box-shadow: /*0px 0px 5px 2px rgb(80, 80, 80);*/
+  --box-shadow: 0px 0px 20px 1px rgba(130, 7, 146, 0.486) ;
 }
 
 html, body {
@@ -26,7 +24,7 @@ html, body {
   grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
 }
 
-#individual-experience{
+#individual-experience:hover{
   box-shadow: var(--box-shadow);
 }
 
@@ -34,32 +32,26 @@ html, body {
   margin-bottom: 1rem;
 }
 
-#individual-project{
+#individual-project:hover{
   box-shadow: var(--box-shadow);
 }
 
-#individual-category{
+#individual-category:hover{
   box-shadow: var(--box-shadow);
 }
 
-#extra-skill-container{
-  box-shadow: var(--box-shadow);
-}
-#about{
+
+#about-content:hover{
   box-shadow: var(--box-shadow);
 }
 
-#experience-p{
+#experience-p:hover{
   box-shadow: var(--box-shadow) ;
 }
 
-#contact-div{
-  box-shadow:var(--box-shadow);
-}
 
-#submit{
-  box-shadow: var(--box-shadow);
-}
+
+
 .disabled {
   pointer-events: none;
   opacity: 0.7;
@@ -83,5 +75,5 @@ h1,h2{
   color: #cf1cc0;
 }
 main{
-  background: linear-gradient(to bottom, transparent 3%, rgb(46, 4, 42) 20%, transparent 30%,transparent 40%, rgb(46, 4, 42) 60%,transparent 90%);
+  background: linear-gradient(to bottom, transparent 3%, rgb(41, 4, 46) 15%, transparent 35%);
 }
