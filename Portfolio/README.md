@@ -1,48 +1,40 @@
-# Astro Starter Kit: Basics
+# 🌟 Portfolio Web
 
-```sh
-npm create astro@latest -- --template basics
-```
+Mi **portfolio web actual** es una demostración del avance tecnológico que alcancé en el último tiempo.  
+Apliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el **rendimiento**, la **escalabilidad** y la **estructura** del mismo.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+---
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Demo
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+📂 [Ver capturas del proyecto](https://drive.google.com/drive/folders/13NMxndRt0_SmGCm81oToAhaJUNfxUgJI?usp=sharing)
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🧠 Tecnologías utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- React
+- Astro
+- Tailwind CSS
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## 💡 Características principales
 
-All commands are run from the root of the project, from a terminal:
+- Diseño **responsive** adaptado a todo tipo de dispositivos.
+- Uso de **React** para la interactividad y el manejo de estados.
+- Generación de contenido dinámico utilizando **Astro**.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## 📝 Notas
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este portfolio representa mi enfoque actual en cuanto a desarrollo frontend: **componentización**, **rendimiento**, y **claridad estructural**. La combinación de Astro y React me permite lograr un equilibrio entre velocidad de carga y dinamismo en la interfaz.
+
+---
+
+## 📚 Aprendizajes
+
+- Integración de **React** dentro de un entorno **Astro**.
+- Diseño y construcción de un sitio orientado a la **escalabilidad y el rendimiento**.
+- Uso de **Tailwind CSS** para un desarrollo más ágil y personalizable.
