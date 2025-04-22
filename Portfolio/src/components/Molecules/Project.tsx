@@ -11,13 +11,14 @@ interface ProjectProps {
     description: string;
     imageUrl: string;
     techs: Tech[];
-    href: string;
+    GitHubUrl: string;
+    driveUrl: string;
     content: string;
   };
 }
 
 export function Project({ project }: ProjectProps) {
-  const { title, description, imageUrl, techs, content, href } = project;
+  const { title, description, imageUrl, techs, content, GitHubUrl, driveUrl } = project;
   const [expand, setExpand] = useState(false);
 
   const handleClick = () => {
@@ -86,15 +87,27 @@ export function Project({ project }: ProjectProps) {
             "
             dangerouslySetInnerHTML={{ __html: content }}
           />
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="text-blue-500 inline-block mt-4"
-          >
-            Ver más...
-          </a>
+          <div className="w-full flex flex-row justify-around">
+            <a
+              href={GitHubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="text-blue-500 inline-block mt-4"
+            >
+              Github
+            </a>
+            <a
+              href={driveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="text-blue-500 inline-block mt-4"
+            >
+              Ver Imágenes
+            </a>
+
+          </div>
         </div>
       </div>
       <footer className="bg-neutral-800 absolute bottom-0 left-0 right-0">
