@@ -125,6 +125,11 @@
             "alt": "Azure"
           },
           {
+            "name": "Git",
+            "icon": "/assets/logos/skills/git.png",
+            "alt": "Git"
+          },
+          {
             "name": "GitHub",
             "icon": "/assets/logos/skills/github.png",
             "alt": "GitHub"
