@@ -1,0 +1,57 @@
+---
+    import AcademicItem from "./atoms/AcademicItem.astro"
+---
+
+<div class="sm:w-2/3 w-80 m-auto text-center">
+    <h2 class="text-5xl pb-15">Educación</h2>
+
+    <section id="academic" class="text-white text-left mb-20">
+        <h3 class="text-3xl pb-5">Formación Académica</h3>
+        <ul class="space-y-5">
+            <AcademicItem 
+            imgUrl={"/assets/educacion/utn.png"}
+            imgAlt={"UTN FRGP"}
+            title={"Técnico Universitario en Programación"}
+            p1={"Universidad Tecnológica Nacional, Argentina"}
+            p2={"2023-Actualidad (graduación aproximada 07/2025)"}
+            />
+        </ul>
+    </section>
+    <section id="certifications" class="text-white text-left">
+        <h3 class="text-3xl pb-5">Certificaciones</h3>
+        <ul class="space-y-5">
+            <AcademicItem 
+            imgUrl={"/assets/educacion/codo.png"}
+            imgAlt={"Codo a Codo"}
+            title={"Full Stack Web Developer with NodeJS"}
+            p1={"<Codo a Codo/>"}
+            p2={"2024"}
+            />
+        
+            <AcademicItem 
+            imgUrl={"/assets/educacion/udemy.png"}
+            imgAlt={"Udemy Frontend"}
+            title={"Frontend Web Developer"}
+            p1={"Udemy"}
+            p2={"2024"}
+            />
+            
+            <AcademicItem 
+            imgUrl={"/assets/educacion/digi.png"}
+            imgAlt={"Digital House Frontend"}
+            title={"Web Developer Basics Level 02"}
+            p1={"Digital House"}
+            p2={"2023"}
+            />
+            
+            <AcademicItem 
+            imgUrl={"/assets/educacion/digi.png"}
+            imgAlt={"Digital House Frontend"}
+            title={"Web Developer Basics Level 01"}
+            p1={"Digital House"}
+            p2={"2023"}
+            />
+
+        </ul>
+    </section>
+</div>

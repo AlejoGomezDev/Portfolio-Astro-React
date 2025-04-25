@@ -49,7 +49,9 @@ html, body {
   box-shadow: var(--box-shadow) ;
 }
 
-
+#academic-item:hover{
+  box-shadow: var(--box-shadow) ;
+}
 
 
 .disabled {

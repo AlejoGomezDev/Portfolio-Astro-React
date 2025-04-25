@@ -1,0 +1,14 @@
+---
+const {imgUrl, imgAlt,title,p1,p2} = Astro.props;
+---
+
+    <li id="academic-item" class=" transition-all duration-300 ease-in-out flex flex-row gap-4 p-4 border-1 border-zinc-800 rounded-2xl bg-neutral-900">
+        <img src={imgUrl} alt={imgAlt} class="sm:w-1/10 sm:h-auto w-1/4 h-1/4 rounded-xl border-1 border-zinc-800 ">
+        
+        <div >
+            <h4 class="sm:text-2xl text-md font-semibold">{title}</h4>
+            <p>{p1}</p>
+            <p>{p2}</p>
+        </div>
+
+    </li>
