@@ -2,7 +2,7 @@
 title: "Millo Store Stock"
 description: "Aplicación de Gestion para local de indumentaria"
 alt: "Millo Stock"
-imageUrl: "/assets/projects-images/MilloStock.jpg"
+imageUrl: "/assets/projects-images/MilloStore1.png"
 url: "https://drive.google.com/drive/folders/1qZrWAn2UyHMZU62zcyTnbdcwbAQOUQA7?usp=drive_link"
 techs:
     - alt: "C#"
