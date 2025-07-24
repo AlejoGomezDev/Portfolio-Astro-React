@@ -23,6 +23,41 @@
         "content": "<p>Mi portfolio web actual es una demostración del avance tecnológico que alcancé en el ultimo tiempo.\nApliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el rendimiento, escalabilidad y estructura del mismo.</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Diseño <strong>responsive</strong>.</li>\n<li>Uso de <strong>React</strong> para la interactividad y el manejo de estados.</li>\n<li>Generación de contenido dinámico utilizando <strong>Astro</strong>.</li>\n</ul>"
       },
       {
+        "title": "Banco Honse",
+        "description": "Sistema de gestión de Banco",
+        "imageUrl": "/assets/projects-images/bancoHonse.png",
+        "driveUrl": "https://drive.google.com/drive/folders/1t8DK7pkJbPGbzHIlmLR53qEWtzNX_Gxe?usp=sharing",
+        "GitHubUrl":"https://github.com/AlejoGomezDev/BancoHonse",
+        "techs": [
+          {
+            "alt": "Java",
+            "iconUrl": "/assets/logos/skills/java.png"
+          },
+          {
+            "alt": "SQL",
+            "iconUrl": "/assets/logos/skills/sql.png"
+          },
+          {
+            "alt": "MySQL",
+            "iconUrl": "/assets/logos/skills/mysql.png"
+          },
+          {
+            "alt": "JavaScript",
+            "iconUrl": "/assets/logos/skills/js.png"
+          },
+           {
+            "alt": "HTML5",
+            "iconUrl": "/assets/logos/skills/html5.png"
+          },
+           {
+            "alt": "CSS3",
+            "iconUrl": "/assets/logos/skills/css3.png"
+          }
+        ],
+        "content":"<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión de banco</strong> desarrollado como trabajo final para la <strong>Tecnicatura Universitaria en Programación</strong> en la UTN.</p>\n<h3>Características principales:</h3>\n<ul>\n  <li>Autenticación mediante sistema de login diferenciado por tipo de usuario.</li>\n  <li>Soporte para múltiples roles:\n    <ul>\n      <li>Administrador</li>\n      <li>Cliente</li>\n    </ul>\n  </li>\n  <li>Acceso a funcionalidades específicas según el tipo de usuario.</li>\n  <li>Manejo de la sesión mediante Cookies.</li>\n  <li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de clientes, cuentas y préstamos.</li>\n  <li>Realización de <strong>transferencias</strong> entre cuentas bancarias.</li>\n  <li>Solicitud y pago de <strong>préstamos</strong> en cuotas.</li>\n  <li>Validaciones de negocio como límite de cuentas por cliente, verificación de fondos, estado del préstamo, etc.</li>\n  <li>Generación de <strong>reportes</strong> y estadísticas basadas en la base de datos.</li>\n</ul>\n<h3>Tecnologías utilizadas:</h3>\n<ul>\n  <li>Java (JSP y Servlets)</li>\n  <li>MySQL</li>\n  <li>HTML, CSS y JavaScript</li>\n  <li>Arquitectura en capas: JSP (Vista), Servlets (Controlador), Lógica de negocio, DAO</li>\n</ul>\n<p></p>"
+
+      },
+      {
         "title": "Reactive Search",
         "description": "Biblioteca de Peliculas Reactiva",
         "imageUrl": "/assets/projects-images/ReactiveSearch2.png",
@@ -89,7 +124,7 @@
             "iconUrl": "/assets/logos/skills/net.png"
           }
         ],
-"content":"<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión integral</strong> diseñado para administrar una <strong>clínica médica</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n  <li>Autenticación mediante sistema de login diferenciado por tipo de usuario.</li>\n  <li>Soporte para múltiples roles:\n    <ul>\n      <li>Administrador</li>\n      <li>Médico</li>\n      <li>Paciente</li>\n    </ul>\n  </li>\n  <li>Acceso a contenido y funcionalidades según el tipo de usuario.</li>\n  <li>Manejo de la sesión mediante Cookies y/o SessionStorage.</li>\n  <li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de médicos, pacientes y turnos.</li>\n <li>Asignación y validacion de TURNOS \n </li>  <li>Generación de <strong>informes</strong> basados en datos almacenados en la DB.</li>\n</ul>"
+"content":"<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión integral</strong> diseñado para administrar una <strong>clínica médica</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n  <li>Autenticación mediante sistema de login diferenciado por tipo de usuario.</li>\n  <li>Soporte para múltiples roles:\n    <ul>\n      <li>Administrador</li>\n      <li>Médico</li>\n      <li>Paciente</li>\n    </ul>\n  </li>\n  <li>Acceso a contenido y funcionalidades según el tipo de usuario.</li>\n  <li>Manejo de la sesión mediante Cookies y/o SessionStorage.</li>\n  <li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de médicos, pacientes y turnos.</li>\n <li>Asignación y validacion de TURNOS \n </li>  <li>Generación de <strong>informes</strong> basados en datos almacenados en la DB.</li><li>Arquitectura en capas: VISTAS, NEGOCIO, DAO</li>\n</ul>"
 
       },
       {
