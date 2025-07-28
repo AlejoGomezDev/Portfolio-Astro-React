@@ -1,4 +1,4 @@
-# 🌟 Portfolio Web
+# 💻 Portfolio Web
 
 Mi **portfolio web actual** es una demostración del avance tecnológico que alcancé en el último tiempo.  
 Apliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el **rendimiento**, la **escalabilidad** y la **estructura** del mismo.
