@@ -103,11 +103,15 @@
             "icon": "/assets/logos/skills/sqlServer.png",
             "alt": "SQL Server"
           },
-          
           {
             "name": "MySQL",
             "icon": "/assets/logos/skills/mysql.png",
             "alt": "MySQL"
+          },
+          {
+            "name": "Postgres",
+            "icon": "/assets/logos/skills/postgres.png",
+            "alt": "Postgres"
           }
         ]
       },
@@ -133,6 +137,21 @@
             "name": "GitHub",
             "icon": "/assets/logos/skills/github.png",
             "alt": "GitHub"
+          },
+          {
+            "name": "Vite",
+            "icon": "/assets/logos/skills/vite.png",
+            "alt": "Vite"
+          },
+          {
+            "name": "VS Code",
+            "icon": "/assets/logos/skills/vscode.png",
+            "alt": "VisualStudioCode"
+          },
+                    {
+            "name": "Visual Studio ",
+            "icon": "/assets/logos/skills/vs.png",
+            "alt": "VisualStudio"
           }
         ]
       }
