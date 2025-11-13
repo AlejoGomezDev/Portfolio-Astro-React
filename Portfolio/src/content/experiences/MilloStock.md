@@ -21,27 +21,27 @@ techs:
 
 <p class="font-extralight text-[18px]">
   Desarrollé e implementé un sistema de gestión integral para el local de indumentaria
-  <a href="https://www.millostore.com.ar" target="_blank" class=" text-purple-500 font-normal underline italic">MilloStore</a>,
-  el cual abarca los módulos de <strong class=" text-purple-500">ventas</strong>, <strong class=" text-purple-500">facturación</strong>,
-  <strong class=" text-purple-500">stock</strong>, <strong class=" text-purple-500">productos</strong>, <strong class=" text-purple-500">clientes</strong> y
-  <strong class=" text-purple-500">control de costos</strong>.
+  <a href="https://www.millostore.com.ar" target="_blank" class=" text-[#b925cc] font-normal underline italic">MilloStore</a>,
+  el cual abarca los módulos de <strong class=" text-[#b925cc]">ventas</strong>, <strong class=" text-[#b925cc]">facturación</strong>,
+  <strong class=" text-[#b925cc]">stock</strong>, <strong class=" text-[#b925cc]">productos</strong>, <strong class=" text-[#b925cc]">clientes</strong> y
+  <strong class=" text-[#b925cc]">control de costos</strong>.
 </p>
 
 <p class="font-extralight text-[18px]">
-  El proyecto fue desarrollado en <strong class=" text-purple-500">C#</strong> y <strong class=" text-purple-500">.NET (Windows Forms)</strong>,
-  aplicando una <strong class=" text-purple-500">arquitectura en capas</strong> (Negocio, Entidades, Conexión y Vistas)
-  bajo principios de <strong class=" text-purple-500">programación orientada a objetos</strong>.
+  El proyecto fue desarrollado en <strong class=" text-[#b925cc]">C#</strong> y <strong class=" text-[#b925cc]">.NET (Windows Forms)</strong>,
+  aplicando una <strong class=" text-[#b925cc]">arquitectura en capas</strong> (Negocio, Entidades, Conexión y Vistas)
+  bajo principios de <strong class=" text-[#b925cc]">programación orientada a objetos</strong>.
 </p>
 
 <p class="font-extralight text-[18px]">
-  Diseñé y administré una base de datos relacional en <strong class=" text-purple-500">SQL Server</strong>,
-  alojada en <strong class=" text-purple-500">Microsoft Azure</strong>, permitiendo a los usuarios acceder
+  Diseñé y administré una base de datos relacional en <strong class=" text-[#b925cc]">SQL Server</strong>,
+  alojada en <strong class=" text-[#b925cc]">Microsoft Azure</strong>, permitiendo a los usuarios acceder
   a la información en tiempo real. También implementé un sistema de roles y usuarios
   administradores, garantizando un control seguro y centralizado de la información.
 </p>
 
 <p class="font-extralight text-[18px]">
-  Este desarrollo permitió al negocio <strong class=" text-purple-500">modernizar su gestión, optimizar procesos
+  Este desarrollo permitió al negocio <strong class=" text-[#b925cc]">modernizar su gestión, optimizar procesos
   y centralizar datos</strong> de forma eficiente y segura.
 </p>
 

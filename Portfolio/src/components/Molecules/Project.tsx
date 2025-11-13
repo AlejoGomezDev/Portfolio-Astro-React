@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useProjectContent } from "../../logic/useProjectContent";
 
 interface Tech {
   alt: string;
@@ -13,13 +14,16 @@ interface ProjectProps {
     techs: Tech[];
     GitHubUrl: string;
     driveUrl: string;
-    content: string;
+    contentFile: string;
   };
 }
 
 export function Project({ project }: ProjectProps) {
-  const { title, description, imageUrl, techs, content, GitHubUrl, driveUrl } = project;
+  const { title, description, imageUrl, techs, contentFile, GitHubUrl, driveUrl } = project;
   const [expand, setExpand] = useState(false);
+
+  
+   const { content, loading, error } = useProjectContent(contentFile);
 
   const handleClick = () => {
     setExpand(!expand);
@@ -77,16 +81,32 @@ export function Project({ project }: ProjectProps) {
       >
         <div className="min-h-0 overflow-hidden">
           <h4 className="text-xl">{description}</h4>
-          <div
-            className="
-              [&_p]:my-4
-              [&_ul]:list-disc [&_ul]:pl-6
-              [&_li]:my-2
-              [&_strong]:font-bold
-              text-left
-            "
-            dangerouslySetInnerHTML={{ __html: content }}
-          />
+{loading && (
+            <div className="text-center py-4">
+              <p>Cargando contenido...</p>
+            </div>
+          )}
+          
+          {/* Error */}
+          {error && (
+            <div className="text-red-400 text-center py-4">
+              <p>Error: {error}</p>
+            </div>
+          )}
+          
+          {/* Contenido cargado */}
+          {!loading && !error && (
+            <div
+              className="
+                [&_p]:my-4
+                [&_ul]:list-disc [&_ul]:pl-6
+                [&_li]:my-2
+                [&_strong]:font-bold
+                text-left
+              "
+              dangerouslySetInnerHTML={{ __html: content }}
+            />
+          )}
           <div className="w-full flex flex-row justify-around">
             <a
               href={GitHubUrl}

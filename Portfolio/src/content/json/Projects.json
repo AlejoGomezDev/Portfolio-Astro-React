@@ -20,7 +20,7 @@
             "iconUrl": "/assets/logos/skills/tailwind.png"
           }
         ],
-        "content": "<p>Mi portfolio web actual es una demostración del avance tecnológico que alcancé en el ultimo tiempo.\nApliqué todo lo aprendido en anteriores proyectos, prestando especial atención a los detalles que mejoran el rendimiento, escalabilidad y estructura del mismo.</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Diseño <strong>responsive</strong>.</li>\n<li>Uso de <strong>React</strong> para la interactividad y el manejo de estados.</li>\n<li>Generación de contenido dinámico utilizando <strong>Astro</strong>.</li>\n</ul>"
+        "contentFile": "/assets/projectsHtml/portfolioWeb.html"
       },
       {
         "title": "Banco Honse",
@@ -54,8 +54,7 @@
             "iconUrl": "/assets/logos/skills/css3.png"
           }
         ],
-        "content": "<p>Este proyecto integrador universitario consiste en un <strong>sistema de gestión de banco</strong> desarrollado como trabajo final para la <strong>Tecnicatura Universitaria en Programación</strong> en la UTN.</p>\n\n<h3>Características principales:</h3>\n<ul>\n  <li>Autenticación mediante sistema de login diferenciado por tipo de usuario.</li>\n  <li>Manejo de la sesión mediante Cookies.</li>\n  <li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de clientes, cuentas y préstamos.</li>\n  <li>Realización de <strong>transferencias</strong> entre cuentas bancarias.</li>\n  <li>Solicitud y pago de <strong>préstamos</strong> en cuotas.</li>\n  <li>Validaciones de negocio como límite de cuentas por cliente, verificación de fondos, estado del préstamo, etc.</li>\n  <li>Generación de <strong>reportes</strong> y estadísticas basadas en la base de datos.</li>\n</ul>"
-
+        "contentFile": "/assets/projectsHtml/bancoHonse.html"
       },
       {
         "title": "Reactive Search",
@@ -81,7 +80,7 @@
             "iconUrl": "/assets/logos/skills/html5.png"
           }
         ],
-        "content": "<p>Aplicación <strong>SPA</strong> desarrollada con <strong>React puro</strong>, que permite a los usuarios buscar títulos de películas y obtener resultados en tiempo real mediante el consumo de una <strong>API externa</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Búsqueda de películas</strong> con resultados en tiempo real.</li>\n<li><strong>Paginación</strong> para mejorar la experiencia de usuario.</li>\n<li><strong>Context API</strong> para la gestión de estados y contextos globales.</li>\n<li><strong>React Router DOM</strong> para la navegación.</li>\n<li>Optimización de rendimiento utilizando <strong>diferentes tipos de estados</strong>.</li>\n</ul>"
+      "contentFile": "/assets/projectsHtml/reactiveSearch.html"  
       },
       {
         "title": "The Chained Dungeon",
@@ -99,7 +98,7 @@
             "iconUrl": "/assets/logos/skills/sfml.png"
           }
         ],
-        "content": "<p>Desarrollado como proyecto integrador universitario, este <strong>juego</strong> combina elementos clásicos de <strong>exploración en mazmorras</strong> con un sistema de <strong>combate</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Enemigos</strong>: Clasificados en <em>normales</em>, <em>mini jefes</em> y <em>jefes finales</em>.</li>\n<li><strong>Ítems</strong>: Varios ítems que el jugador puede recolectar para mejorar sus habilidades.</li>\n<li><strong>Sistema de niveles</strong>: Basado en experiencia (XP), ofrece beneficios al jugador</li>\n</ul>"
+        "contentFile": "<p>Desarrollado como proyecto integrador universitario, este <strong>juego</strong> combina elementos clásicos de <strong>exploración en mazmorras</strong> con un sistema de <strong>combate</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Enemigos</strong>: Clasificados en <em>normales</em>, <em>mini jefes</em> y <em>jefes finales</em>.</li>\n<li><strong>Ítems</strong>: Varios ítems que el jugador puede recolectar para mejorar sus habilidades.</li>\n<li><strong>Sistema de niveles</strong>: Basado en experiencia (XP), ofrece beneficios al jugador</li>\n</ul>"
       },
       {
         "title": "Gestión para Clínica",
@@ -129,8 +128,7 @@
             "iconUrl": "/assets/logos/skills/net.png"
           }
         ],
-"content": "<p><strong>Sistema de gestión integral</strong> diseñado para administrar una <strong>clínica médica</strong>.</p>\n\n<h3>Características principales:</h3>\n<ul>\n  <li>Autenticación mediante sistema de login diferenciado por tipo de usuario.</li>\n  <li>Manejo de la sesión mediante Cookies y/o SessionStorage.</li>\n  <li>Manejo del <strong>alta</strong>, <strong>baja</strong>, <strong>modificación</strong> y <strong>listado</strong> (ABML) de médicos, pacientes y turnos.</li>\n  <li>Asignación y validación de <strong>turnos</strong>.</li>\n  <li>Generación de <strong>informes</strong> basados en datos almacenados en la base de datos.</li>\n  <li>Arquitectura en capas: Vistas, Negocio, Conexión a base de datos y Entidades.</li>\n</ul>"
-
+      "contentFile": "/assets/projectsHtml/theCD.html"
       },
       {
         "title": "CodeFlix",
@@ -164,7 +162,7 @@
             "iconUrl": "/assets/logos/skills/express.png"
           }
         ],
-        "content": "<p>Proyecto final para la certificación de <strong>Web Developer</strong>, esta aplicación web permite gestionar una <strong>biblioteca de películas</strong> mediante el consumo de una <strong>API externa</strong>.</p>\n<h3>Características principales:</h3>\n<ul>\n<ul>\n<li><strong>Inicio de sesión</strong>.</li>\n<li>Manejo de <strong>usuarios</strong> con ABML (alta, baja, modificación, listado).</li>\n<li>Sistema de <strong>comentarios</strong>.</li>\n<li>Integración con una base de datos <strong>MySQL</strong> para el almacenamiento de información.</li>\n</ul>\n</li>\n</ul>"
+      "contentFile": "/assets/projectsHtml/codeFlix.html" 
       },
       {
         "title": "Portfolio Web (antiguo)",
@@ -186,7 +184,7 @@
             "iconUrl": "/assets/logos/skills/css3.png"
           }
         ],
-        "content": "<p>Esta aplicación web fue desarrollada inicialmente para mostrar mi perfil profesional.\nLa diseñé con mis primeros conocimientos de desarrollo web, y fue un gran reto que me puso a prueba y me permitió aprender mucho en el proceso.</p>\n<h3>Características principales:</h3>\n<ul>\n<li><strong>Barra de navegación</strong>.</li>\n<li><strong>Información detallada</strong> sobre mi experiencia y proyectos.</li>\n<li>Mi stack completo de <strong>Tecnologías</strong> y <strong>Herramientas</strong></li>\n<li><strong>Formulario de contacto</strong> hacía mi correo electrónico.</li>\n<li><strong>Diseño Responsive</strong>.</li>\n</ul>\n<p>Al progresar como programador, me di cuenta de las diferentes inconsistencias del proyecto y de que no estaba empleando las mejores practicas ni los métodos mas eficientes.Por eso,decidi rehacer mi pagina utilizando tecnologias modernas para mejorar la estructura,rendimiento y escalabilidad.</p>"
+      "contentFile": "/assets/projectsHtml/portfolioWeb2.html" 
       },
       {
         "title": "Burguer::Code",
@@ -212,7 +210,7 @@
             "iconUrl": "/assets/logos/skills/bootstrap.png"
           }
         ],
-        "content": "<p>Desarrollado con un enfoque en el <strong>diseño visual</strong> y el <strong>impacto estético</strong>, este sitio web promociona una <strong>hamburguesería</strong> ofreciendo:</p>\n<h3>Características principales:</h3>\n<ul>\n<li>Navegación <strong>intuitiva</strong> por su <strong>menú</strong>.</li>\n<li><strong>Información detallada</strong> sobre sus sucursales.</li>\n<li><strong>Formulario de postulación</strong> para interesados en trabajar en el local.</li>\n<li><strong>Diseño</strong>: Responsive y atractivo, ideal para captar la atención del público objetivo y mejorar la experiencia del usuario.</li>\n</ul>"
+      "contentFile": "/assets/projectsHtml/burguerCode.html"  
       }
     ]
   }

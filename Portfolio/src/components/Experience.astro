@@ -1,6 +1,7 @@
 ---
 import ExperiencieProject from "./Molecules/Experiencie-project.astro";
 import { getCollection } from "astro:content";
+import {ExperienceProjectMobile} from "./Molecules/Experience-project-mobile.tsx";
 
 const experiences = await getCollection("experiences");
 
@@ -9,18 +10,39 @@ const experiencesWithContent = await Promise.all(
     const { data, render } = experience;
     const { Content } = await render();
 
+
     return {
       ...data,
       Content,
+
     };
   })
 );
 ---
-
-<div class="sm:w-2/3 w-85  m-auto mb-32">
-  <h2 class="text-5xl pb-15">Experiencia Laboral</h2>
-
-  {experiencesWithContent.map((experience) => (
-    <ExperiencieProject {...experience} />
-  ))}
-</div>
+{
+  <div class="sm:w-2/3 w-85  m-auto mb-32">
+    <h2 class="text-5xl pb-15">Experiencia Laboral</h2>
+    
+    <div class="hidden sm:flex">
+      {experiencesWithContent.map((experience) => (
+        <ExperiencieProject {...experience} />
+      ))}
+    </div>
+    
+    <div class="flex sm:hidden">
+      
+      {experiencesWithContent.map((experience, index) => (
+        <ExperienceProjectMobile 
+          client:visible
+          url={experience.url}
+          imageUrl={experience.imageUrl}
+          alt={experience.alt}
+          title={experience.title}
+          techs={experience.techs}
+          Content={experience.Content}
+        />
+      ))}
+    </div>
+  </div>
+  
+}
