@@ -2,38 +2,38 @@
     <h4 class="text-2xl">Envíame un <span class="font-bold text-3xl">email</span></h4>
     <form id="contactForm" class="flex flex-col justify-around w-full m-auto mt-4 gap-3">
       <input
-        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        class="p-1 pl-3 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
         type="text"
         name="nombre"
         id="nombre"
-        placeholder="Escribe tu Nombre (Letras y espacios blancos)"
+        placeholder="Nombre"
         title="Nombre solo acepta letras y espacios en blanco"
         pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
         required
       />
       <input
-        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        class="p-1 pl-3 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
         type="email"
         name="email"
         id="email"
-        placeholder="Escribe tu Email (ejemplo@TuEmail.com)"
+        placeholder="ejemplo@mail.com"
         title="Email invalido"
         pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         required
       />
       <input
-        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        class="p-1 pl-3 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
         type="text"
         name="asunto"
         id="asunto"
-        placeholder="Escribe el Asunto"
+        placeholder="Asunto"
       />
       <input
-        class="p-1 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
+        class="p-1 pl-3 text-black rounded-lg w-7/8 bg-gray-200 m-auto box-border"
         type="text"
         name="mensaje"
         id="mensaje"
-        placeholder="Escribe tu Mensaje (Máx. 255 Caracteres)"
+        placeholder="Mensaje (Máx. 255 Caracteres)"
         pattern="^.{1,255}$"
         required
       />
@@ -43,7 +43,7 @@
       </div>
   
       <input
-        class="gradientBackground w-fit  text-white px-9 py-2 text-md m-auto rounded-full cursor-pointer hover:scale-105 transition-all duration-150 ease-in"
+        class=" gradientBackgroundBlue sendButtonBlue w-fit  text-white px-9 py-2 text-md m-auto rounded-md cursor-pointer hover:-translate-y-1 transition-all duration-150 ease-in"
         type="submit"
         name="submit"
         id="submit"

@@ -6,6 +6,10 @@
 
 :root{
   --box-shadow: 0px 0px 20px 1px rgba(130, 7, 146, 0.486) ;
+  --box-shadow-dark: 2px 0px 10px 0px rgba(255, 11, 186, 0.218) ;
+  --box-shadow-light: 2px 0px 20px 5px rgba(213, 25, 185, 0.239) ;
+  --box-shadow-lightblue: 0px 0px 5px 1px rgb(95, 144, 167);
+  --box-shadow-blue: 0px 0px 15px 5px rgb(37, 128, 134);
 }
 
 html, body {
@@ -50,9 +54,21 @@ html, body {
 }
 
 #academic-item:hover{
-  box-shadow: var(--box-shadow) ;
+  box-shadow: var(--box-shadow-blue) ;
 }
 
+.buttonCV, .sendButton{
+  box-shadow: var(--box-shadow-dark) ;
+}
+
+.sendButtonBlue{
+  box-shadow: var(--box-shadow-lightblue) ;
+}
+
+
+.contactAnchor:hover{
+    box-shadow: var(--box-shadow-blue) ;
+}
 
 .disabled {
   pointer-events: none;
@@ -67,11 +83,14 @@ h1,h2{
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-
+  
 }
 .gradientBackground{
   background: #270034;
   background: linear-gradient(90deg, rgb(25, 0, 33) 0%, rgb(107, 20, 98) 90%);
+}
+.gradientBackgroundBlue{
+  background: linear-gradient(90deg, #0b8e9727 20%,  #075d63 60%,#0b8e9727 100%);
 }
 .gradientExperienceBackground{
 background: #141414;
@@ -82,4 +101,24 @@ background: linear-gradient(191deg, rgba(20, 20, 20, 1) 10%, rgba(9, 9, 9, 1) 40
 }
 main{
   background: linear-gradient(to bottom, transparent 3%, rgb(41, 4, 46) 15%, transparent 35%);
+}
+
+#gradiente {
+  background: radial-gradient(
+    circle at left center,
+     #8d1a2d 0%,
+    transparent 40%
+  ); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#gradiente2 {
+  background: radial-gradient(
+    circle at right bottom,
+    #075d63 0%,
+    transparent 25%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
 }

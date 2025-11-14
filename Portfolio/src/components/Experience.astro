@@ -23,13 +23,13 @@ const experiencesWithContent = await Promise.all(
   <div class="sm:w-2/3 w-85  m-auto mb-32">
     <h2 class="text-5xl pb-15">Experiencia Laboral</h2>
     
-    <div class="hidden sm:flex">
+    <div class="">
       {experiencesWithContent.map((experience) => (
         <ExperiencieProject {...experience} />
       ))}
     </div>
     
-    <div class="flex sm:hidden">
+    {/* <div class="flex sm:hidden">
       
       {experiencesWithContent.map((experience, index) => (
         <ExperienceProjectMobile 
@@ -42,7 +42,7 @@ const experiencesWithContent = await Promise.all(
           Content={experience.Content}
         />
       ))}
-    </div>
+    </div> */}
   </div>
   
 }
